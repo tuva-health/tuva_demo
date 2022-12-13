@@ -1,0 +1,32 @@
+name: 'tuva_claims_demo'
+version: '0.1.0'
+config-version: 2
+
+profile: tuva_claims_demo        # configuration required (your profile to connect dbt to your data warehouse)
+
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+vars:
+  tuva_packages_enabled: true
+  data_profiling_enabled: true
+  claims_preprocessing_enabled: true
+  chronic_conditions_enabled: true
+  readmissions_enabled: true
+  terminology_enabled: true
+
+  tuva_database: tuva_claims_demo
+
+dispatch:
+  - macro_namespace: dbt
+    search_order: [ 'the_tuva_project', 'dbt' ]
