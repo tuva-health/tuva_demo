@@ -19,7 +19,7 @@ Please summarize the specific items you’d like the reviewer(s) to look into.
     - [ ]  Snowflake
     - [ ]  Redshift
 - [ ]  I have implemented generic dbt tests to validate primary keys/uniqueness in my model
-- [ ]  I have updated dbt docs by running `dbt docs generate` and copying the appropriate files to the `docs/` path
+- [ ]  I have updated dbt docs by running `dbt docs generate` and copying the appropriate files to the `docs/` path
 - [ ]  I have added at least one Github label to this PR
 
 ## (Optional) Gif of how this PR makes you feel
