@@ -2,7 +2,7 @@ name: 'tuva_claims_demo'
 version: '0.1.0'
 config-version: 2
 
-profile: tuva_claims_demo        # configuration required (your profile to connect dbt to your data warehouse)
+profile: tuva_claims_demo                 # Configuration required (your profile to connect dbt to your data warehouse)
 
 
 model-paths: ["models"]
@@ -18,15 +18,32 @@ clean-targets:
   - "dbt_packages"
 
 vars:
-  tuva_packages_enabled: true
-  data_profiling_enabled: true
-  claims_preprocessing_enabled: true
-  chronic_conditions_enabled: true
-  readmissions_enabled: true
-  terminology_enabled: true
+  # These variables tell the_tuva_project package what
+  # packages to run. If there are some packages you
+  # are not interested in running, this is where you
+  # need to set the relevant variable(s) to 'false':
+  vars:
+    tuva_packages_enabled: true
+    data_profiling_enabled: true
+    claims_preprocessing_enabled: true
+    chronic_conditions_enabled: true
+    readmissions_enabled: true
+    terminology_enabled: true
 
-  tuva_database: tuva_claims_demo
+  # This variable sets the name of the database
+  # where the output of the Tuva Project will be
+  # dumped into. Make sure this database exists
+  # in your data warehouse before you run this package,
+  # since dbt can create schemas in your data warehouse,
+  # but it cannot create databases. Note that further
+  # down you may choose separate databases for the
+  # output of different dbt packages within the Tuva Project:
+  tuva_database: tuva_claims_demo_sample
 
+# By default, dbt prefixes schema names with the target
+# schema in your profile. We recommend including this
+# here so that dbt does not prefix the output schemas
+# of the Tuva Project with anything:
 dispatch:
   - macro_namespace: dbt
     search_order: [ 'the_tuva_project', 'dbt' ]
