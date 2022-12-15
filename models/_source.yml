@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: demo
+    database: "{{ var('tuva_database') }}"
+    schema: raw_data
+    tables:
+      - name: eligibility_full
+      - name: medical_claim_full
+      - name: pharmacy_claim_full
