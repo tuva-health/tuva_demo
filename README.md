@@ -15,6 +15,7 @@ For information on data models and to view the entire DAG check out our dbt [Doc
 
 ## 🔌 Database Support
 
+- Redshift
 - Snowflake
 
 ## ✅ How to get started

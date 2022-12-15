@@ -22,13 +22,12 @@ vars:
   # packages to run. If there are some packages you
   # are not interested in running, this is where you
   # need to set the relevant variable(s) to 'false':
-  vars:
-    tuva_packages_enabled: true
-    data_profiling_enabled: true
-    claims_preprocessing_enabled: true
-    chronic_conditions_enabled: true
-    readmissions_enabled: true
-    terminology_enabled: true
+  tuva_packages_enabled: true
+  data_profiling_enabled: true
+  claims_preprocessing_enabled: true
+  chronic_conditions_enabled: true
+  readmissions_enabled: true
+  terminology_enabled: true
 
   # This variable sets the name of the database
   # where the output of the Tuva Project will be
