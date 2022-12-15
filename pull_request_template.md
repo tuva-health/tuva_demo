@@ -15,7 +15,7 @@ Please summarize the specific items you’d like the reviewer(s) to look into.
 - [ ]  I have recorded a Loom performing a self-review of my code
 - [ ]  My code follows style guidelines
 - [ ]  I have commented my code as necessary
-- [ ]  I have testing by code by running `dbt build` in the following warehouse(s):
+- [ ]  I have tested my code by running `dbt build` in the following warehouse(s):
     - [ ]  Snowflake
     - [ ]  Redshift
 - [ ]  I have implemented generic dbt tests to validate primary keys/uniqueness in my model
