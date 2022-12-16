@@ -22,7 +22,7 @@ For information on data models and to view the entire DAG check out our dbt [Doc
 
 ### Pre-requisites
 1. You have [dbt](https://www.getdbt.com/) installed and configured (i.e. connected to your data warehouse).
-2. You have created a database called `tuva_claims_demo_sample` in your data warehouse.
+2. You have created a database for the output of this project to be written in your data warehouse.
 
 [Here](https://docs.getdbt.com/dbt-cli/installation) are instructions for installing dbt.
 
@@ -30,7 +30,9 @@ For information on data models and to view the entire DAG check out our dbt [Doc
 Complete the following steps to configure the project to run in your environment.
 
 1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repo to your local machine or environment.
-2. Update the dbt_project.yml file to use the dbt profile connected to your data warehouse.
+2. Update the dbt_project.yml file:
+   1. Add the dbt profile connected to your data warehouse.
+   2. Update the variable "tuva_database" to use the new database you created for this project.
 3. Run `dbt deps` to install the package. 
 4. Run `dbt build` to run the entire project.
 

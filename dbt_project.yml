@@ -34,10 +34,13 @@ vars:
   # dumped into. Make sure this database exists
   # in your data warehouse before you run this package,
   # since dbt can create schemas in your data warehouse,
-  # but it cannot create databases. Note that further
-  # down you may choose separate databases for the
-  # output of different dbt packages within the Tuva Project:
+  # but it cannot create databases.
   tuva_database: tuva_claims_demo_sample
+
+  # This variable allows you to override the sample data seeds and
+  # use the full demo data instead, you may also want to update the
+  # tuva_database variable to not overwrite the sample demo
+  full_data_override: false
 
 # By default, dbt prefixes schema names with the target
 # schema in your profile. We recommend including this

@@ -6,7 +6,8 @@ seeds:
       database: "{{ var('tuva_database') }}"
       schema: raw_data
       tags: tuva_claims_demo
-      enabled: "{{ var('tuva_database') == 'tuva_claims_demo_sample' | as_bool }}"
+      enabled: |
+        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
       column_types:
         patient_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
@@ -50,7 +51,8 @@ seeds:
       database: "{{ var('tuva_database') }}"
       schema: raw_data
       tags: tuva_claims_demo
-      enabled: "{{ var('tuva_database') == 'tuva_claims_demo_sample' | as_bool }}"
+      enabled: |
+        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
       column_types:
         claim_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
@@ -290,7 +292,8 @@ seeds:
       database: "{{ var('tuva_database') }}"
       schema: raw_data
       tags: tuva_claims_demo
-      enabled: "{{ var('tuva_database') == 'tuva_claims_demo_sample' | as_bool }}"
+      enabled: |
+        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
       column_types:
         claim_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}

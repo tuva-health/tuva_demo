@@ -5,6 +5,6 @@ sources:
     database: "{{ var('tuva_database') }}"
     schema: raw_data
     tables:
-      - name: eligibility_full
-      - name: medical_claim_full
-      - name: pharmacy_claim_full
+      - name: eligibility
+      - name: medical_claim
+      - name: pharmacy_claim
