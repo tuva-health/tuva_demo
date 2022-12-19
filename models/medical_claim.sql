@@ -8,4 +8,4 @@ select * from {{ ref('medical_claim_sample') }}
 
 select * from {{ source('demo','medical_claim') }}
 
-{%- endif -%}
+{%- endif %}

@@ -8,4 +8,4 @@ select * from {{ ref('eligibility_sample') }}
 
 select * from {{ source('demo', 'eligibility') }}
 
-{%- endif -%}
+{%- endif %}

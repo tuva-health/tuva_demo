@@ -8,4 +8,4 @@ select * from {{ ref('pharmacy_claim_sample') }}
 
 select * from {{ source('demo','pharmacy_claim') }}
 
-{%- endif -%}
+{%- endif %}
