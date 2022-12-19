@@ -11,7 +11,7 @@ You can run the project with built-in sample data loaded as seeds.
 For a detailed overview of what the Tuva Project does and how it works, check out our [Knowledge Base](https://thetuvaproject.com/docs/getting-started). 
 To setup the Tuva Project with your own claims data, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 
-For information on data models and to view the entire DAG check out our dbt [Docs](https://tuva-health.github.io/tuva_claims_demo/#!/overview?g_v=1).
+For information on data models and to view the entire DAG check out our dbt [Docs](https://tuva-health.github.io/tuva_claims_demo/#!/overview).
 
 ## 🔌 Database Support
 
