@@ -1,0 +1,220 @@
+patient_id,member_id,gender,race,birth_date,death_date,death_flag,enrollment_start_date,enrollment_end_date,payer,payer_type,dual_status_code,medicare_status_code,first_name,last_name,address,city,state,zip_code,phone,data_source
+10133,,male,white,1949-06-04,,0,2016-01-01,2017-11-30,medicare,medicare,,10,,,,,Kentucky,,,cclf
+10133,,male,white,1949-06-04,,0,2018-01-01,2018-02-28,medicare,medicare,,10,,,,,Kentucky,,,cclf
+10133,,male,white,1949-06-04,,0,2018-04-01,2018-08-31,medicare,medicare,,10,,,,,Kentucky,,,cclf
+10133,,male,white,1949-06-04,,0,2018-10-01,2018-11-30,medicare,medicare,,10,,,,,Kentucky,,,cclf
+10208,,female,white,1944-03-14,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Washington,,,cclf
+1003,,male,white,1946-02-09,,0,2016-01-01,2016-12-31,medicare,medicare,,10,,,,,Oklahoma,,,cclf
+1003,,male,white,1946-02-09,,0,2017-02-01,2018-01-31,medicare,medicare,,10,,,,,Oklahoma,,,cclf
+1003,,male,white,1946-02-09,,0,2018-03-01,2018-03-31,medicare,medicare,,10,,,,,Oklahoma,,,cclf
+1003,,male,white,1946-02-09,,0,2018-05-01,2018-06-30,medicare,medicare,,10,,,,,Oklahoma,,,cclf
+10187,,male,white,1937-02-13,,0,2016-01-01,2017-05-31,medicare,medicare,,10,,,,,Minnesota,,,cclf
+10187,,male,white,1937-02-13,,0,2017-07-01,2017-11-30,medicare,medicare,,10,,,,,Minnesota,,,cclf
+10187,,male,white,1937-02-13,,0,2018-01-01,2018-03-31,medicare,medicare,,10,,,,,Minnesota,,,cclf
+10187,,male,white,1937-02-13,,0,2018-05-01,2018-05-31,medicare,medicare,,10,,,,,Minnesota,,,cclf
+10187,,male,white,1937-02-13,,0,2018-07-01,2018-07-31,medicare,medicare,,10,,,,,Minnesota,,,cclf
+10120,,male,white,1953-07-11,,0,2017-01-01,2018-04-30,medicare,medicare,,20,,,,,Alabama,,,cclf
+10120,,male,white,1953-07-11,,0,2018-06-01,2018-08-31,medicare,medicare,,20,,,,,Alabama,,,cclf
+10156,,female,white,1935-04-05,,0,2016-01-01,2016-05-31,medicare,medicare,01,10,,,,,Hawaii,,,cclf
+10156,,female,white,1935-04-05,,0,2016-07-01,2016-10-31,medicare,medicare,01,10,,,,,Hawaii,,,cclf
+10156,,female,white,1935-04-05,,0,2016-12-01,2017-03-31,medicare,medicare,06,10,,,,,Hawaii,,,cclf
+10156,,female,white,1935-04-05,,0,2017-05-01,2018-11-30,medicare,medicare,01,10,,,,,Hawaii,,,cclf
+10222,,female,hispanic,1951-04-02,,0,2017-07-01,2018-10-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10233,,female,white,1947-11-05,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Idaho,,,cclf
+10059,,male,black,1942-12-27,,0,2016-01-01,2017-01-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10059,,male,black,1942-12-27,,0,2017-03-01,2017-03-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10059,,male,black,1942-12-27,,0,2017-05-01,2017-05-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10059,,male,black,1942-12-27,,0,2017-07-01,2017-09-30,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10252,,female,white,1933-02-09,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Ohio,,,cclf
+10059,,male,black,1942-12-27,,0,2017-11-01,2018-05-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10120,,male,white,1953-07-11,,0,2018-10-01,2018-12-31,medicare,medicare,,20,,,,,Alabama,,,cclf
+10145,,male,white,1936-08-25,,0,2016-01-01,2018-01-31,medicare,medicare,,10,,,,,California,,,cclf
+10145,,male,white,1936-08-25,,0,2018-03-01,2018-11-30,medicare,medicare,,10,,,,,California,,,cclf
+10284,,male,white,1971-03-13,2017-09-18,1,2016-01-01,2016-03-31,medicare,medicare,,20,,,,,Maine,,,cclf
+10284,,male,white,1971-03-13,2017-09-18,1,2016-05-01,2017-02-28,medicare,medicare,,20,,,,,Maine,,,cclf
+10284,,male,white,1971-03-13,2017-09-18,1,2017-04-01,2017-04-30,medicare,medicare,,20,,,,,Maine,,,cclf
+10284,,male,white,1971-03-13,2017-09-18,1,2017-06-01,2017-10-31,medicare,medicare,,20,,,,,Maine,,,cclf
+10327,,female,white,1949-04-06,,0,2016-01-01,2018-10-31,medicare,medicare,,10,,,,,Montana,,,cclf
+10222,,female,hispanic,1951-04-02,,0,2016-01-01,2017-05-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10359,,female,white,1931-11-29,,0,2016-01-01,2018-12-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10369,,female,white,1941-03-18,,0,2016-01-01,2018-12-31,medicare,medicare,,10,,,,,Ohio,,,cclf
+10429,,female,white,1948-08-31,,0,2016-01-01,2016-03-31,medicare,medicare,,10,,,,,Puerto Rico,,,cclf
+10450,,male,white,1932-08-07,,0,2016-01-01,2018-07-31,medicare,medicare,,10,,,,,South Carolina,,,cclf
+10557,,male,white,1940-11-29,,0,2016-01-01,2016-11-30,medicare,medicare,,10,,,,,Maryland,,,cclf
+10557,,male,white,1940-11-29,,0,2017-01-01,2018-07-31,medicare,medicare,,10,,,,,Maryland,,,cclf
+10408,,female,white,1930-05-01,,0,2016-01-01,2016-11-30,medicare,medicare,,10,,,,,California,,,cclf
+10408,,female,white,1930-05-01,,0,2017-01-01,2017-05-31,medicare,medicare,,10,,,,,California,,,cclf
+10408,,female,white,1930-05-01,,0,2017-07-01,2018-05-31,medicare,medicare,,10,,,,,California,,,cclf
+10408,,female,white,1930-05-01,,0,2018-07-01,2018-11-30,medicare,medicare,,10,,,,,California,,,cclf
+10429,,female,white,1948-08-31,,0,2016-05-01,2017-10-31,medicare,medicare,,10,,,,,Puerto Rico,,,cclf
+10429,,female,white,1948-08-31,,0,2017-12-01,2018-05-31,medicare,medicare,,10,,,,,Puerto Rico,,,cclf
+10429,,female,white,1948-08-31,,0,2018-07-01,2018-10-31,medicare,medicare,,10,,,,,Puerto Rico,,,cclf
+1047,,male,hispanic,1947-04-03,,0,2016-01-01,2018-10-31,medicare,medicare,02,10,,,,,Colorado,,,cclf
+10485,,male,white,1947-07-01,,0,2016-01-01,2016-02-29,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10700,,female,white,1948-02-19,,0,2016-01-01,2016-01-31,medicare,medicare,,10,,,,,Kansas,,,cclf
+10700,,female,white,1948-02-19,,0,2016-03-01,2016-04-30,medicare,medicare,,10,,,,,Kansas,,,cclf
+10485,,male,white,1947-07-01,,0,2016-04-01,2017-12-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10518,,male,white,1949-01-07,,0,2016-01-01,2018-12-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+10640,,female,white,1953-10-01,,0,2017-01-01,2017-10-31,medicare,medicare,,10,,,,,Louisiana,,,cclf
+10640,,female,white,1953-10-01,,0,2017-12-01,2018-01-31,medicare,medicare,,10,,,,,Louisiana,,,cclf
+10640,,female,white,1953-10-01,,0,2018-03-01,2018-05-31,medicare,medicare,,10,,,,,Louisiana,,,cclf
+10842,,male,white,1963-06-27,,0,2016-01-01,2018-11-30,medicare,medicare,,20,,,,,Pennsylvania,,,cclf
+10867,,male,white,1942-03-20,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10878,,male,white,1948-01-05,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Kansas,,,cclf
+10895,,female,white,1948-04-03,,0,2016-01-01,2016-03-31,medicare,medicare,,10,,,,,Texas,,,cclf
+10895,,female,white,1948-04-03,,0,2016-05-01,2017-01-31,medicare,medicare,,10,,,,,Texas,,,cclf
+10895,,female,white,1948-04-03,,0,2017-03-01,2017-06-30,medicare,medicare,,10,,,,,Texas,,,cclf
+10895,,female,white,1948-04-03,,0,2017-08-01,2018-05-31,medicare,medicare,,10,,,,,Texas,,,cclf
+10895,,female,white,1948-04-03,,0,2018-07-01,2018-11-30,medicare,medicare,,10,,,,,Texas,,,cclf
+10700,,female,white,1948-02-19,,0,2016-06-01,2018-11-30,medicare,medicare,,10,,,,,Kansas,,,cclf
+10977,,female,white,1930-08-19,,0,2016-01-01,2018-09-30,medicare,medicare,,10,,,,,Wyoming,,,cclf
+11000,,male,white,1953-05-11,,0,2017-01-01,2018-11-30,medicare,medicare,,10,,,,,Maine,,,cclf
+10803,,male,asian,1947-07-02,,0,2016-01-01,2017-11-30,medicare,medicare,,10,,,,,Hawaii,,,cclf
+10834,,male,black,1963-06-24,,0,2016-01-01,2016-01-31,medicare,medicare,02,20,,,,,Mississippi,,,cclf
+10834,,male,black,1963-06-24,,0,2016-03-01,2016-07-31,medicare,medicare,02,20,,,,,Mississippi,,,cclf
+10834,,male,black,1963-06-24,,0,2016-09-01,2017-01-31,medicare,medicare,02,20,,,,,Mississippi,,,cclf
+10834,,male,black,1963-06-24,,0,2017-03-01,2017-03-31,medicare,medicare,02,20,,,,,Mississippi,,,cclf
+10834,,male,black,1963-06-24,,0,2017-05-01,2018-01-31,medicare,medicare,02,20,,,,,Mississippi,,,cclf
+10834,,male,black,1963-06-24,,0,2018-03-01,2018-09-30,medicare,medicare,02,20,,,,,Mississippi,,,cclf
+11169,,male,white,1963-08-28,,0,2016-01-01,2016-05-31,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11169,,male,white,1963-08-28,,0,2016-07-01,2016-10-31,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11169,,male,white,1963-08-28,,0,2016-12-01,2017-02-28,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11169,,male,white,1963-08-28,,0,2017-04-01,2017-07-31,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11169,,male,white,1963-08-28,,0,2017-09-01,2017-09-30,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11169,,male,white,1963-08-28,,0,2017-11-01,2018-01-31,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11169,,male,white,1963-08-28,,0,2018-03-01,2018-04-30,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11169,,male,white,1963-08-28,,0,2018-06-01,2018-07-31,medicare,medicare,02,20,,,,,Puerto Rico,,,cclf
+11181,,female,black,1951-03-05,,0,2016-01-01,2017-05-31,medicare,medicare,,10,,,,,Virgin Islands,,,cclf
+11181,,female,black,1951-03-05,,0,2017-07-01,2017-08-31,medicare,medicare,,10,,,,,Virgin Islands,,,cclf
+11181,,female,black,1951-03-05,,0,2017-10-01,2018-02-28,medicare,medicare,,10,,,,,Virgin Islands,,,cclf
+10871,,male,white,1924-02-14,,0,2016-01-01,2018-04-30,medicare,medicare,,10,,,,,Nevada,,,cclf
+11221,,female,white,1936-03-18,,0,2016-01-01,2018-02-28,medicare,medicare,,10,,,,,Ohio,,,cclf
+11221,,female,white,1936-03-18,,0,2018-04-01,2018-08-31,medicare,medicare,,10,,,,,Ohio,,,cclf
+11266,,female,white,1942-03-27,,0,2016-01-01,2018-08-31,medicare,medicare,,10,,,,,Ohio,,,cclf
+11305,,female,white,1943-12-05,,0,2016-01-01,2018-10-31,medicare,medicare,,10,,,,,Pennsylvania,,,cclf
+11415,,female,white,1951-07-02,,0,2016-01-01,2018-06-30,medicare,medicare,,10,,,,,Colorado,,,cclf
+11450,,male,white,1947-09-29,,0,2016-01-01,2018-10-31,medicare,medicare,,10,,,,,Ohio,,,cclf
+11476,,male,white,1952-04-29,,0,2016-01-01,2016-05-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+11476,,male,white,1952-04-29,,0,2016-07-01,2016-11-30,medicare,medicare,,10,,,,,Missouri,,,cclf
+11476,,male,white,1952-04-29,,0,2017-01-01,2017-01-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+11476,,male,white,1952-04-29,,0,2017-03-01,2018-08-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+115,,female,white,1947-01-23,,0,2016-01-01,2016-08-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+115,,female,white,1947-01-23,,0,2016-10-01,2017-03-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+115,,female,white,1947-01-23,,0,2017-05-01,2017-05-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+115,,female,white,1947-01-23,,0,2017-07-01,2018-01-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+115,,female,white,1947-01-23,,0,2018-03-01,2018-10-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+1125,,male,black,1949-11-19,,0,2016-01-01,2018-06-30,medicare,medicare,,10,,,,,South Carolina,,,cclf
+11606,,female,black,1957-08-21,,0,2016-01-01,2016-07-31,medicare,medicare,01,20,,,,,Kansas,,,cclf
+11606,,female,black,1957-08-21,,0,2016-09-01,2016-10-31,medicare,medicare,08,20,,,,,Kansas,,,cclf
+11606,,female,black,1957-08-21,,0,2016-12-01,2017-02-28,medicare,medicare,08,20,,,,,Kansas,,,cclf
+11606,,female,black,1957-08-21,,0,2017-04-01,2018-07-31,medicare,medicare,06,20,,,,,Kansas,,,cclf
+11636,,male,white,1950-12-11,,0,2016-01-01,2018-12-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+11308,,male,black,1939-03-25,,0,2016-01-01,2018-12-31,medicare,medicare,,10,,,,,Oklahoma,,,cclf
+11388,,male,white,1938-02-17,,0,2016-01-01,2017-12-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+11388,,male,white,1938-02-17,,0,2018-02-01,2018-03-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+11388,,male,white,1938-02-17,,0,2018-05-01,2018-10-31,medicare,medicare,02,10,,,,,Colorado,,,cclf
+11713,,female,white,1945-08-21,,0,2016-01-01,2016-01-31,medicare,medicare,,10,,,,,California,,,cclf
+11713,,female,white,1945-08-21,,0,2016-03-01,2017-11-30,medicare,medicare,,10,,,,,California,,,cclf
+11412,,female,white,1940-05-23,,0,2016-01-01,2017-01-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+11412,,female,white,1940-05-23,,0,2017-03-01,2018-10-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+11487,,female,white,1934-05-07,,0,2016-01-01,2017-12-31,medicare,medicare,,10,,,,,Ohio,,,cclf
+11830,,female,white,1943-04-10,,0,2016-01-01,2017-01-31,medicare,medicare,,10,,,,,Vermont,,,cclf
+11830,,female,white,1943-04-10,,0,2017-03-01,2017-05-31,medicare,medicare,,10,,,,,Vermont,,,cclf
+11830,,female,white,1943-04-10,,0,2017-07-01,2018-03-31,medicare,medicare,,10,,,,,Vermont,,,cclf
+11842,,male,white,1933-03-02,,0,2016-01-01,2016-04-30,medicare,medicare,08,10,,,,,Ohio,,,cclf
+11842,,male,white,1933-03-02,,0,2016-06-01,2017-12-31,medicare,medicare,08,10,,,,,Ohio,,,cclf
+11842,,male,white,1933-03-02,,0,2018-02-01,2018-06-30,medicare,medicare,,10,,,,,Ohio,,,cclf
+11514,,male,white,1952-03-17,,0,2017-01-01,2018-09-30,medicare,medicare,,10,,,,,Kansas,,,cclf
+11906,,female,white,1939-12-08,2018-12-17,1,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Kentucky,,,cclf
+11912,,male,white,1949-07-17,,0,2017-12-01,2018-09-30,medicare,medicare,,10,,,,,West Virginia,,,cclf
+11583,,male,white,1944-03-10,,0,2016-01-01,2016-11-30,medicare,medicare,,10,,,,,Colorado,,,cclf
+11583,,male,white,1944-03-10,,0,2017-01-01,2017-01-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+11583,,male,white,1944-03-10,,0,2017-03-01,2017-03-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+11583,,male,white,1944-03-10,,0,2017-05-01,2017-09-30,medicare,medicare,,10,,,,,Colorado,,,cclf
+11583,,male,white,1944-03-10,,0,2017-11-01,2017-11-30,medicare,medicare,,10,,,,,Colorado,,,cclf
+11642,,female,white,1953-04-06,,0,2017-01-01,2018-09-30,medicare,medicare,,10,,,,,Minnesota,,,cclf
+11977,,female,white,1940-10-06,,0,2016-01-01,2016-02-29,medicare,medicare,,10,,,,,Hawaii,,,cclf
+11977,,female,white,1940-10-06,,0,2016-04-01,2018-06-30,medicare,medicare,,10,,,,,Hawaii,,,cclf
+12019,,male,white,1970-09-26,,0,2016-01-01,2018-11-30,medicare,medicare,02,20,,,,,Kansas,,,cclf
+1202,,male,white,1960-04-12,,0,2016-01-01,2016-04-30,medicare,medicare,,20,,,,,Missouri,,,cclf
+1202,,male,white,1960-04-12,,0,2016-06-01,2016-07-31,medicare,medicare,,20,,,,,Missouri,,,cclf
+1202,,male,white,1960-04-12,,0,2016-09-01,2017-01-31,medicare,medicare,,20,,,,,Missouri,,,cclf
+1202,,male,white,1960-04-12,,0,2017-03-01,2017-05-31,medicare,medicare,,20,,,,,Missouri,,,cclf
+1202,,male,white,1960-04-12,,0,2017-07-01,2018-01-31,medicare,medicare,,20,,,,,Missouri,,,cclf
+1202,,male,white,1960-04-12,,0,2018-03-01,2018-10-31,medicare,medicare,02,20,,,,,Missouri,,,cclf
+11736,,female,white,1926-05-18,,0,2016-01-01,2018-05-31,medicare,medicare,,10,,,,,Virgin Islands,,,cclf
+1208,,female,unknown,1944-12-25,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Colorado,,,cclf
+121,,female,white,1929-06-28,,0,2016-01-01,2018-02-28,medicare,medicare,,10,,,,,Vermont,,,cclf
+121,,female,white,1929-06-28,,0,2018-04-01,2018-09-30,medicare,medicare,,10,,,,,Vermont,,,cclf
+12110,,male,other,1936-02-12,,0,2016-01-01,2018-06-30,medicare,medicare,02,10,,,,,Colorado,,,cclf
+11890,,male,white,1946-12-17,,0,2016-01-01,2018-01-31,medicare,medicare,,10,,,,,Ohio,,,cclf
+11890,,male,white,1946-12-17,,0,2018-03-01,2018-11-30,medicare,medicare,,10,,,,,Ohio,,,cclf
+11912,,male,white,1949-07-17,,0,2016-01-01,2016-04-30,medicare,medicare,,10,,,,,West Virginia,,,cclf
+11912,,male,white,1949-07-17,,0,2016-06-01,2016-07-31,medicare,medicare,,10,,,,,West Virginia,,,cclf
+11912,,male,white,1949-07-17,,0,2016-09-01,2016-09-30,medicare,medicare,,10,,,,,West Virginia,,,cclf
+11912,,male,white,1949-07-17,,0,2016-11-01,2017-05-31,medicare,medicare,,10,,,,,West Virginia,,,cclf
+11912,,male,white,1949-07-17,,0,2017-07-01,2017-07-31,medicare,medicare,,10,,,,,West Virginia,,,cclf
+11912,,male,white,1949-07-17,,0,2017-09-01,2017-10-31,medicare,medicare,,10,,,,,West Virginia,,,cclf
+11934,,female,white,1936-11-05,,0,2016-01-01,2017-11-30,medicare,medicare,,10,,,,,Louisiana,,,cclf
+11934,,female,white,1936-11-05,,0,2018-01-01,2018-05-31,medicare,medicare,,10,,,,,Louisiana,,,cclf
+11935,,female,white,1975-01-25,,0,2016-01-01,2018-10-31,medicare,medicare,,20,,,,,Virgin Islands,,,cclf
+12276,,male,white,1941-01-02,,0,2017-03-01,2017-07-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+12276,,male,white,1941-01-02,,0,2017-09-01,2017-10-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+12276,,male,white,1941-01-02,,0,2017-12-01,2018-11-30,medicare,medicare,,10,,,,,Missouri,,,cclf
+12330,,male,asian,1939-02-20,,0,2016-01-01,2016-03-31,medicare,medicare,,10,,,,,Massachusetts,,,cclf
+12330,,male,asian,1939-02-20,,0,2016-05-01,2018-09-30,medicare,medicare,,10,,,,,Massachusetts,,,cclf
+12412,,female,white,1943-07-26,2017-09-22,1,2016-01-01,2018-12-31,medicare,medicare,00,0,,,,,Ohio (eff. 10/2005),,,cclf
+12445,,female,white,1945-07-25,,0,2016-01-01,2018-03-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+12445,,female,white,1945-07-25,,0,2018-05-01,2018-08-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+1251,,female,white,1962-06-22,,0,2016-01-01,2018-07-31,medicare,medicare,,20,,,,,Nevada,,,cclf
+12541,,male,white,1950-10-05,,0,2016-01-01,2018-12-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+12573,,male,white,1949-01-27,,0,2016-01-01,2018-06-30,medicare,medicare,,10,,,,,Hawaii,,,cclf
+12573,,male,white,1949-01-27,,0,2018-08-01,2018-11-30,medicare,medicare,,10,,,,,Hawaii,,,cclf
+12183,,male,white,1951-04-15,,0,2016-01-01,2018-08-31,medicare,medicare,,10,,,,,South Carolina,,,cclf
+12221,,male,white,1951-03-20,,0,2016-01-01,2018-09-30,medicare,medicare,,10,,,,,Vermont,,,cclf
+12276,,male,white,1941-01-02,,0,2016-01-01,2017-01-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+12640,,female,asian,1949-12-08,,0,2016-01-01,2018-10-31,medicare,medicare,02,10,,,,,Ohio,,,cclf
+12670,,female,black,1947-10-17,,0,2016-01-01,2017-03-31,medicare,medicare,,10,,,,,Oklahoma,,,cclf
+12812,,female,white,1955-06-01,,0,2016-01-01,2018-12-31,medicare,medicare,08,20,,,,,Ohio,,,cclf
+12822,,male,white,1935-04-10,,0,2016-01-01,2016-08-31,medicare,medicare,,10,,,,,Iowa,,,cclf
+12822,,male,white,1935-04-10,,0,2016-10-01,2017-08-31,medicare,medicare,,10,,,,,Iowa,,,cclf
+12822,,male,white,1935-04-10,,0,2017-10-01,2018-09-30,medicare,medicare,,10,,,,,Iowa,,,cclf
+13157,,female,white,1953-07-08,,0,2017-01-01,2018-12-31,medicare,medicare,,10,,,,,Missouri,,,cclf
+13230,,female,black,1954-11-07,,0,2016-01-01,2018-08-31,medicare,medicare,08,20,,,,,Vermont,,,cclf
+1325,,female,white,1965-06-12,,0,2016-01-01,2018-10-31,medicare,medicare,08,20,,,,,Maryland,,,cclf
+13289,,female,white,1953-02-22,,0,2016-01-01,2016-11-30,medicare,medicare,02,20,,,,,Ohio,,,cclf
+13289,,female,white,1953-02-22,,0,2017-01-01,2018-01-31,medicare,medicare,,10,,,,,Ohio,,,cclf
+13289,,female,white,1953-02-22,,0,2018-03-01,2018-04-30,medicare,medicare,,10,,,,,Ohio,,,cclf
+12284,,male,black,1951-11-14,,0,2016-01-01,2017-09-30,medicare,medicare,,10,,,,,Virgin Islands,,,cclf
+12284,,male,black,1951-11-14,,0,2017-11-01,2018-01-31,medicare,medicare,,10,,,,,Virgin Islands,,,cclf
+12284,,male,black,1951-11-14,,0,2018-03-01,2018-06-30,medicare,medicare,,10,,,,,Virgin Islands,,,cclf
+12324,,female,other,1934-02-01,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,Montana,,,cclf
+13348,,male,hispanic,1960-03-13,,0,2016-01-01,2018-06-30,medicare,medicare,02,20,,,,,Colorado,,,cclf
+124,,female,white,1944-09-19,,0,2016-01-01,2018-10-31,medicare,medicare,,10,,,,,South Carolina,,,cclf
+12530,,female,white,1952-03-12,,0,2016-01-01,2018-07-31,medicare,medicare,,10,,,,,Idaho,,,cclf
+12530,,female,white,1952-03-12,,0,2018-09-01,2018-09-30,medicare,medicare,,10,,,,,Idaho,,,cclf
+12530,,female,white,1952-03-12,,0,2018-11-01,2018-11-30,medicare,medicare,,10,,,,,Idaho,,,cclf
+12670,,female,black,1947-10-17,,0,2017-05-01,2018-08-31,medicare,medicare,,10,,,,,Oklahoma,,,cclf
+12684,,female,white,1948-05-11,,0,2016-01-01,2016-10-31,medicare,medicare,,10,,,,,Pennsylvania,,,cclf
+12684,,female,white,1948-05-11,,0,2016-12-01,2018-01-31,medicare,medicare,,10,,,,,Pennsylvania,,,cclf
+12697,,female,white,1939-02-19,,0,2016-01-01,2016-09-30,medicare,medicare,,10,,,,,South Carolina,,,cclf
+12697,,female,white,1939-02-19,,0,2016-11-01,2017-01-31,medicare,medicare,,10,,,,,South Carolina,,,cclf
+12697,,female,white,1939-02-19,,0,2017-03-01,2017-05-31,medicare,medicare,,10,,,,,South Carolina,,,cclf
+12697,,female,white,1939-02-19,,0,2017-07-01,2017-08-31,medicare,medicare,,10,,,,,South Carolina,,,cclf
+12697,,female,white,1939-02-19,,0,2017-10-01,2018-07-31,medicare,medicare,,10,,,,,South Carolina,,,cclf
+12761,,female,asian,1948-03-18,,0,2016-01-01,2017-08-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+12761,,female,asian,1948-03-18,,0,2017-10-01,2018-08-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+12909,,female,asian,1953-07-28,,0,2017-01-01,2018-11-30,medicare,medicare,,10,,,,,Colorado,,,cclf
+13038,,male,white,1954-01-25,,0,2016-01-01,2018-09-30,medicare,medicare,02,20,,,,,New Jersey,,,cclf
+13096,,male,black,1956-11-15,,0,2016-01-01,2017-09-30,medicare,medicare,03,20,,,,,Idaho,,,cclf
+13096,,male,black,1956-11-15,,0,2017-11-01,2018-03-31,medicare,medicare,,20,,,,,Idaho,,,cclf
+13096,,male,black,1956-11-15,,0,2018-05-01,2018-11-30,medicare,medicare,,20,,,,,Idaho,,,cclf
+13103,,female,black,1935-06-10,,0,2016-01-01,2018-11-30,medicare,medicare,,10,,,,,New Mexico,,,cclf
+13140,,male,black,1943-09-23,,0,2016-01-01,2018-04-30,medicare,medicare,,10,,,,,Kansas,,,cclf
+13140,,male,black,1943-09-23,,0,2018-06-01,2018-11-30,medicare,medicare,,10,,,,,Kansas,,,cclf
+13145,,male,white,1950-10-31,,0,2016-01-01,2016-03-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+13145,,male,white,1950-10-31,,0,2016-05-01,2016-08-31,medicare,medicare,,10,,,,,Colorado,,,cclf
+13145,,male,white,1950-10-31,,0,2016-10-01,2018-11-30,medicare,medicare,,10,,,,,Colorado,,,cclf
+13238,,female,white,1947-12-27,,0,2016-01-01,2017-10-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+13238,,female,white,1947-12-27,,0,2017-12-01,2018-10-31,medicare,medicare,,10,,,,,Hawaii,,,cclf
+13322,,female,white,1922-10-21,2018-09-05,1,2016-01-01,2018-11-30,medicare,medicare,00,0,,,,,North Carolina,,,cclf

@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: eligibility
+    config:
+      database: "{{ var('tuva_database') }}"
+      schema: claims_common
+      materialized: table
+  - name: medical_claim
+    config:
+      database: "{{ var('tuva_database') }}"
+      schema: claims_common
+      materialized: table
+  - name: pharmacy_claim
+    config:
+      database: "{{ var('tuva_database') }}"
+      schema: claims_common
+      materialized: table
