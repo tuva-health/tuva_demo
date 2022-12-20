@@ -7,9 +7,8 @@
 The Tuva Claims Demo provides a quick and easy way to run the Tuva Project with synthetic demo data. 
 You can run the project with built-in sample data loaded as seeds. 
 (A future release will provide the option to download and install the full demo data from data shares.)
-
-For a detailed overview of what the Tuva Project does and how it works, check out our [Knowledge Base](https://thetuvaproject.com/docs/getting-started). 
-To setup the Tuva Project with your own claims data, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
+ 
+To setup the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 
 For information on data models and to view the entire DAG check out our dbt [Docs](https://tuva-health.github.io/tuva_claims_demo/#!/overview).
 
