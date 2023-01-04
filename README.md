@@ -6,9 +6,9 @@
 
 The Tuva Claims Demo provides a quick and easy way to run the Tuva Project with synthetic demo data. 
 By default, the project will run with built-in sample data of 100 patients loaded as seeds.
-If you want to run the demo project with the full demo data from a data share, please follow the instructions below under "Getting Started".
+If you want to run the demo project with the full demo data from a data share, please follow the instructions below under **"How to get started"**.
 
-To setup the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
+To set up the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 
 For information on data models and to view the entire DAG check out our dbt [Docs](https://tuva-health.github.io/tuva_claims_demo/#!/overview).
 
@@ -29,25 +29,24 @@ For information on data models and to view the entire DAG check out our dbt [Doc
 Complete the following steps to configure the project to run in your environment.
 
 1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repo to your local machine or environment.
-2. Update the dbt_project.yml file:
+2. Update the `dbt_project.yml` file:
    1. Add the dbt profile connected to your data warehouse.
-   2. Update the variable "tuva_database" to use the new database you created for this project.
+   2. Update the variable `tuva_database` to use the new database you created for this project.
 3. Run `dbt deps` to install the package. 
 4. Run `dbt build` to run the entire project with the built-in sample data.
 
-*Full Demo Data*
-
-Complete the following steps to configure the project to run with the full demo data from the Snowflake Marketplace.
+### Running the Project with Full Demo Data
+Complete the following additional steps to configure the project to run with the full demo data from the Snowflake Marketplace.
 You can learn more about how to access Snowflake Marketplace listings [here](https://other-docs.snowflake.com/en/collaboration/consumer-listings-access.html#accessing-listings-on-the-marketplace). 
 
 1. Go to the Tuva Project Claims Demo [listing](https://app.snowflake.com/marketplace/listing/GZT0ZS2I9BQ/tuva-health-tuva-project-claims-demo) on the Snowflake Marketplace.
 2. Select Get.
 3. Specify a database name for the data in the listing.
 4. (Optional) Add roles to grant access to the database created from the listing.
-5. Update the dbt_project.yml file:
-   1. Update the variable "tuva_database" to the database specified in step 3.
-   2. Set the variable "full_data_override" to `true`.
-6. Run `dbt deps` to install the package (if you have not already done this).
+5. Update the `dbt_project.yml` file:
+   1. Update the variable `tuva_database` to the database specified in step 3.
+   2. Set the variable `full_data_override` to **'true'**.
+6. Run `dbt deps` to install the Tuva package (*you only need to do this once per local environment*).
 7. Run `dbt build` to run the entire project.
 
 ## 🙋🏻‍♀️ **How is this project maintained and can I contribute?**
