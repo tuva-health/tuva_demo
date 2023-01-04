@@ -35,11 +35,12 @@ Complete the following steps to configure the project to run in your environment
 3. Run `dbt deps` to install the package. 
 4. Run `dbt build` to run the entire project with the built-in sample data.
 
-#### Full Demo Data
-Complete the following steps to configure the project to run the full demo data from the Snowflake Marketplace.
+*Full Demo Data*
+
+Complete the following steps to configure the project to run with the full demo data from the Snowflake Marketplace.
 You can learn more about how to access Snowflake Marketplace listings [here](https://other-docs.snowflake.com/en/collaboration/consumer-listings-access.html#accessing-listings-on-the-marketplace). 
 
-1. Go to the Snowflake Marketplace [listing](https://app.snowflake.com/marketplace/listing/GZT0ZS2I9BQ/tuva-health-tuva-project-claims-demo).
+1. Go to the Tuva Project Claims Demo [listing](https://app.snowflake.com/marketplace/listing/GZT0ZS2I9BQ/tuva-health-tuva-project-claims-demo) on the Snowflake Marketplace.
 2. Select Get.
 3. Specify a database name for the data in the listing.
 4. (Optional) Add roles to grant access to the database created from the listing.
