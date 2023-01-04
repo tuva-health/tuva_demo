@@ -1,5 +1,5 @@
 name: 'tuva_claims_demo'
-version: '0.1.0'
+version: '0.1.1'
 config-version: 2
 
 profile: tuva_claims_demo                 # Configuration required (your profile to connect dbt to your data warehouse)
@@ -18,17 +18,6 @@ clean-targets:
   - "dbt_packages"
 
 vars:
-  # These variables tell the_tuva_project package what
-  # packages to run. If there are some packages you
-  # are not interested in running, this is where you
-  # need to set the relevant variable(s) to 'false':
-  tuva_packages_enabled: true
-  data_profiling_enabled: true
-  claims_preprocessing_enabled: true
-  chronic_conditions_enabled: true
-  readmissions_enabled: true
-  terminology_enabled: true
-
   # This variable sets the name of the database
   # where the output of the Tuva Project will be
   # dumped into. Make sure this database exists
@@ -38,9 +27,12 @@ vars:
   tuva_database: tuva_claims_demo_sample
 
   # This variable allows you to override the sample data seeds and
-  # use the full demo data instead, you may also want to update the
-  # tuva_database variable to not overwrite the sample demo
+  # use the full demo data instead, you also need to update the
+  # tuva_database variable to where the full data has been loaded.
   full_data_override: false
+
+  # This variable enables the full the_tuva_project package run.
+  tuva_packages_enabled: true
 
 # By default, dbt prefixes schema names with the target
 # schema in your profile. We recommend including this
@@ -48,4 +40,4 @@ vars:
 # of the Tuva Project with anything:
 dispatch:
   - macro_namespace: dbt
-    search_order: [ 'the_tuva_project', 'dbt' ]
+    search_order: [ 'tuva_claims_demo', 'dbt' ]
