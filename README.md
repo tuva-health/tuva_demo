@@ -6,7 +6,7 @@
 
 The Tuva Claims Demo provides a quick and easy way to run the Tuva Project with synthetic demo data. 
 By default, the project will run with built-in sample data of 100 patients loaded as seeds.
-If you want to run the demo project with the full demo data from a data share, please follow the instructions below under **"How to get started"**.
+If you want to run the demo project with the full demo data from a data share, please follow the instructions below under **"Running the Project with Full Demo Data"**.
 
 To set up the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 
