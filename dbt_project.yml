@@ -27,11 +27,11 @@ vars:
   tuva_database: tuva_claims_demo_sample
 
   # This variable allows you to override the sample data seeds and
-  # use the full demo data instead, you may also want to update the
-  # tuva_database variable to not overwrite the sample demo.
+  # use the full demo data instead, you also need to update the
+  # tuva_database variable to where the full data has been loaded.
   full_data_override: false
 
-  # These variables enables the full the_tuva_project package run.
+  # This variable enables the full the_tuva_project package run.
   tuva_packages_enabled: true
 
 # By default, dbt prefixes schema names with the target
