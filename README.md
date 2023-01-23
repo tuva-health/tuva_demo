@@ -53,23 +53,13 @@ The full demo data is available as a Redshift data product in the AWS Data Excha
 10. Run `dbt build` to run the entire project.
 
 #### *BigQuery*
-The full demo data is available as a public dataset in BigQuery.
+The full demo data is available as a public dataset in BigQuery and can be queried directly.
 
-
-1. Due to how BigQuery handles public datasets, we recommend you create a new schema and views for the demo in your Google Cloud project.
-   1. Create the schema:  `CREATE schema raw_data;` 
-      1. *Note: The demo requires this exact schema name.*
-   2. Create views for each of the full demo tables *(Note: The exact view names are required.)*:
-        ``` 
-        CREATE view `<your-project-id>.raw_data.eligibility` AS SELECT * from `tuva-claims-demo.raw_data.eligibility`;
-        CREATE view `<your-project-id>.raw_data.medical_claim` AS SELECT * from `tuva-claims-demo.raw_data.medical_claim`;
-        CREATE view `<your-project-id>.raw_data.pharmacy_claim` AS SELECT * from `tuva-claims-demo.raw_data.pharmacy_claim`;
-       ```
-2. Update the `dbt_project.yml` file:
+1. Update the `dbt_project.yml` file:
    1. Update the variable `tuva_database` to your Google Cloud project id.
-   2. Set the variable `full_data_override` to **'true'**.
-3. Run `dbt deps` to install the Tuva package (*you only need to do this once per local environment*).
-4. Run `dbt build` to run the entire project.
+   2. Set the variable `full_data_override` to **'true'**. *(Note: This project includes logic to use the public dataset automatically when this variable is set to true.)*
+2. Run `dbt deps` to install the Tuva package (*you only need to do this once per local environment*).
+3. Run `dbt build` to run the entire project.
 
 
 #### *Snowflake Marketplace*

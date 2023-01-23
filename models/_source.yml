@@ -2,7 +2,8 @@ version: 2
 
 sources:
   - name: demo
-    database: "{{ var('tuva_database') }}"
+    database: |
+      {% if target.type == "bigquery" -%} tuva-claims-demo {%- else -%} {{ var('tuva_database') }} {%- endif -%}
     schema: raw_data
     tables:
       - name: eligibility
