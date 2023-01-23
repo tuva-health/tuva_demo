@@ -6,7 +6,7 @@
 
 The Tuva Claims Demo provides a quick and easy way to run the Tuva Project with synthetic demo data. 
 By default, the project will run with built-in sample data of 100 patients loaded as dbt seeds.
-If you want to run the demo project with the full demo data from a data share (available for free), please follow the instructions below under [Running the Project with Full Demo Data](/tuva-health/tuva_claims_demo#running-the-project-with-full-demo-data).
+If you want to run the demo project with the full demo data from a data share (available for free), please follow the instructions below under **"Running the Project with Full Demo Data"**.
 
 To set up the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 
@@ -22,8 +22,6 @@ For information on data models and to view the entire DAG check out our dbt [Doc
 ### Pre-requisites
 1. You have [dbt](https://www.getdbt.com/) installed and configured (i.e. connected to your data warehouse). If you have not installed dbt, [here](https://docs.getdbt.com/dbt-cli/installation) are instructions for doing so.
 2. You have created a database for the output of this project to be written in your data warehouse.
-
-
 
 ### Getting Started
 Complete the following steps to configure the project to run in your environment.
@@ -53,6 +51,26 @@ The full demo data is available as a Redshift data product in the AWS Data Excha
    2. Set the variable `full_data_override` to **'true'**.
 9. Run `dbt deps` to install the Tuva package (*you only need to do this once per local environment*).
 10. Run `dbt build` to run the entire project.
+
+#### *BigQuery*
+The full demo data is available as a public dataset in BigQuery.
+
+
+1. Due to how BigQuery handles public datasets, we recommend you create a new schema and views for the demo in your Google Cloud project.
+   1. Create the schema:  `CREATE schema raw_data;` 
+      1. *Note: The demo requires this exact schema name.*
+   2. Create views for each of the full demo tables *(Note: The exact view names are required.)*:
+        ``` 
+        CREATE view `<your-project-id>.raw_data.eligibility` AS SELECT * from `tuva-claims-demo.raw_data.eligibility`;
+        CREATE view `<your-project-id>.raw_data.medical_claim` AS SELECT * from `tuva-claims-demo.raw_data.medical_claim`;
+        CREATE view `<your-project-id>.raw_data.pharmacy_claim` AS SELECT * from `tuva-claims-demo.raw_data.pharmacy_claim`;
+       ```
+2. Update the `dbt_project.yml` file:
+   1. Update the variable `tuva_database` to your Google Cloud project id.
+   2. Set the variable `full_data_override` to **'true'**.
+3. Run `dbt deps` to install the Tuva package (*you only need to do this once per local environment*).
+4. Run `dbt build` to run the entire project.
+
 
 #### *Snowflake Marketplace*
 The full demo data is available in the Snowflake Marketplace. You can learn more about how to access Snowflake Marketplace listings [here](https://other-docs.snowflake.com/en/collaboration/consumer-listings-access.html#accessing-listings-on-the-marketplace).
