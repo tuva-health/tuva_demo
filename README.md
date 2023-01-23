@@ -45,7 +45,7 @@ The full demo data is available as a Redshift data product in the AWS Data Excha
 3. Select *Continue to Subscribe*. Once you subscribe, it will take a few minutes for AWS to process the request.
 4. Go to the Redshift Console and select your cluster. 
 5. Go to the Datashare tab and select any database to view your subscriptions. 
-6. Under *Subscriptions to AWS Data Exchange datashares*, select the `tuva_project_claims_demo` and choose *Create database from datashare*.
+6. Under *Subscriptions to AWS Data Exchange datashares*, select `tuva_project_claims_demo`, and choose *Create database from datashare*.
 7. Specify a database name for the data in the listing.
 8. Update the `dbt_project.yml` file:
    1. Update the variable `tuva_database` to the database specified in step 7.
@@ -67,7 +67,7 @@ The full demo data is available as a public dataset in BigQuery and can be queri
 The full demo data is available in the Snowflake Marketplace. You can learn more about how to access Snowflake Marketplace listings [here](https://other-docs.snowflake.com/en/collaboration/consumer-listings-access.html#accessing-listings-on-the-marketplace).
 
 1. Go to the Tuva Project Claims Demo [listing](https://app.snowflake.com/marketplace/listing/GZT0ZS2I9BQ/tuva-health-tuva-project-claims-demo) on the Snowflake Marketplace.
-2. Select Get.
+2. Select *Get*.
 3. Specify a database name for the data in the listing.
 4. (Optional) Add roles to grant access to the database created from the listing.
 5. Update the `dbt_project.yml` file:
