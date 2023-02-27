@@ -81,6 +81,8 @@ seeds:
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
         ms_drg_code: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
+        apr_drg_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
         revenue_center_code: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
         service_unit_quantity: integer
