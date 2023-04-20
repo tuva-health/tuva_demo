@@ -106,6 +106,7 @@ seeds:
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
         paid_date: date
         paid_amount: float
+        total_cost_amount: float
         allowed_amount: float
         charge_amount: float
         diagnosis_code_type: |
