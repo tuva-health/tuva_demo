@@ -4,12 +4,12 @@ models:
   - name: eligibility
     config:
       database: "{{ var('tuva_database') }}"
-      schema: input_layer
+      schema: claims_data_model
   - name: medical_claim
     config:
       database: "{{ var('tuva_database') }}"
-      schema: input_layer
+      schema: claims_data_model
   - name: pharmacy_claim
     config:
       database: "{{ var('tuva_database') }}"
-      schema: input_layer
+      schema: claims_data_model
