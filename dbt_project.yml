@@ -1,5 +1,5 @@
 name: 'tuva_claims_demo'
-version: '0.1.2'
+version: '0.1.3'
 config-version: 2
 
 profile: tuva_claims_demo                 # Configuration required (your profile to connect dbt to your data warehouse)
@@ -31,13 +31,10 @@ vars:
   # tuva_database variable to where the full data has been loaded.
   full_data_override: false
 
-  # This variable enables the full the_tuva_project package run.
-  tuva_packages_enabled: true
-
 # By default, dbt prefixes schema names with the target
 # schema in your profile. We recommend including this
 # here so that dbt does not prefix the output schemas
 # of the Tuva Project with anything:
 dispatch:
   - macro_namespace: dbt
-    search_order: [ 'tuva_claims_demo', 'dbt' ]
+    search_order: [ 'the_tuva_project', 'dbt' ]
