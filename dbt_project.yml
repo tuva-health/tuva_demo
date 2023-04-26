@@ -2,8 +2,7 @@ name: 'tuva_claims_demo'
 version: '0.1.3'
 config-version: 2
 
-profile: tuva_claims_demo                 # Configuration required (your profile to connect dbt to your data warehouse)
-
+profile: tuva_claims_demo     # Configuration required (your profile to connect dbt to your data warehouse)
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -17,24 +16,8 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-vars:
-  # This variable sets the name of the database
-  # where the output of the Tuva Project will be
-  # dumped into. Make sure this database exists
-  # in your data warehouse before you run this package,
-  # since dbt can create schemas in your data warehouse,
-  # but it cannot create databases.
-  tuva_database: tuva_claims_demo_sample
-
-  # This variable allows you to override the sample data seeds and
-  # use the full demo data instead, you also need to update the
-  # tuva_database variable to where the full data has been loaded.
-  full_data_override: false
-
-# By default, dbt prefixes schema names with the target
-# schema in your profile. We recommend including this
-# here so that dbt does not prefix the output schemas
-# of the Tuva Project with anything:
-dispatch:
-  - macro_namespace: dbt
-    search_order: [ 'the_tuva_project', 'dbt' ]
+models:
+  tuva_claims_demo:
+    +materialized: view
+    +schema: tuva_claims_demo
+    +tags: tuva_claims_demo
