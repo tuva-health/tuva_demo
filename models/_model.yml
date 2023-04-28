@@ -2,17 +2,5 @@ version: 2
 
 models:
   - name: eligibility
-    config:
-      database: "{{ var('tuva_database') }}"
-      schema: claims_data_model
-      materialized: table
   - name: medical_claim
-    config:
-      database: "{{ var('tuva_database') }}"
-      schema: claims_data_model
-      materialized: table
   - name: pharmacy_claim
-    config:
-      database: "{{ var('tuva_database') }}"
-      schema: claims_data_model
-      materialized: table

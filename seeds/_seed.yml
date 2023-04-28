@@ -3,11 +3,8 @@ version: 2
 seeds:
   - name: eligibility_sample
     config:
-      database: "{{ var('tuva_database') }}"
-      schema: raw_data
+      schema: tuva_claims_demo
       tags: tuva_claims_demo
-      enabled: |
-        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
       column_types:
         patient_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
@@ -46,13 +43,11 @@ seeds:
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
         data_source: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
+
   - name: medical_claim_sample
     config:
-      database: "{{ var('tuva_database') }}"
-      schema: raw_data
+      schema: tuva_claims_demo
       tags: tuva_claims_demo
-      enabled: |
-        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
       column_types:
         claim_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
@@ -290,13 +285,11 @@ seeds:
         procedure_date_25: date
         data_source: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
+
   - name: pharmacy_claim_sample
     config:
-      database: "{{ var('tuva_database') }}"
-      schema: raw_data
+      schema: tuva_claims_demo
       tags: tuva_claims_demo
-      enabled: |
-        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
       column_types:
         claim_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
