@@ -1,10 +1,10 @@
 version: 2
 
 seeds:
-  - name: eligibility_sample
+  - name: eligibility
     config:
-      schema: tuva_claims_demo
-      tags: tuva_claims_demo
+      schema: tuva_synthetic
+      tags: the_tuva_project_demo
       column_types:
         patient_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
@@ -44,10 +44,10 @@ seeds:
         data_source: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
 
-  - name: medical_claim_sample
+  - name: medical_claim
     config:
-      schema: tuva_claims_demo
-      tags: tuva_claims_demo
+      schema: tuva_synthetic
+      tags: the_tuva_project_demo
       column_types:
         claim_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
@@ -286,10 +286,10 @@ seeds:
         data_source: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
 
-  - name: pharmacy_claim_sample
+  - name: pharmacy_claim
     config:
-      schema: tuva_claims_demo
-      tags: tuva_claims_demo
+      schema: tuva_synthetic
+      tags: the_tuva_project_demo
       column_types:
         claim_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
