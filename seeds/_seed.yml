@@ -1,319 +1,378 @@
 version: 2
 
 seeds:
-  - name: eligibility_sample
+  - name: pharmacy_claim
     config:
       database: "{{ var('tuva_database') }}"
-      schema: raw_data
+      schema: claims_data_model
       tags: tuva_claims_demo
-      enabled: |
-        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
-      column_types:
-        patient_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        member_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        gender: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        race: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        birth_date: date
-        death_date: date
-        death_flag: integer
-        enrollment_start_date: date
-        enrollment_end_date: date
-        payer: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        payer_type: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        dual_status_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        medicare_status_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        first_name: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        last_name: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        address: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        city: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        state: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        zip_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        phone: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        data_source: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-  - name: medical_claim_sample
-    config:
-      database: "{{ var('tuva_database') }}"
-      schema: raw_data
-      tags: tuva_claims_demo
-      enabled: |
-        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
+      enabled: true
       column_types:
         claim_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        claim_line_number: integer
-        claim_type: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        patient_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        member_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        claim_start_date: date
-        claim_end_date: date
-        claim_line_start_date: date
-        claim_line_end_date: date
-        admission_date: date
-        discharge_date: date
-        admit_source_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        admit_type_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        discharge_disposition_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        place_of_service_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        bill_type_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        ms_drg_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        revenue_center_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        service_unit_quantity: integer
-        hcpcs_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        hcpcs_modifier_1: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        hcpcs_modifier_2: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        hcpcs_modifier_3: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        hcpcs_modifier_4: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        hcpcs_modifier_5: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        rendering_npi: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        billing_npi: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        facility_npi: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        paid_date: date
-        paid_amount: float
-        allowed_amount: float
-        charge_amount: float
-        diagnosis_code_type: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_1: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_2: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_3: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_4: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_5: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_6: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_7: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_8: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_9: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_10: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_11: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_12: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_13: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_14: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_15: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_16: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_17: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_18: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_19: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_20: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_21: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_22: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_23: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_24: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_code_25: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_1: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_2: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_3: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_4: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_5: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_6: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_7: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_8: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_9: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_10: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_11: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_12: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_13: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_14: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_15: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_16: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_17: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_18: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_19: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_20: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_21: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_22: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_23: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_24: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        diagnosis_poa_25: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_type: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_1: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_2: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_3: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_4: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_5: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_6: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_7: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_8: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_9: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_10: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_11: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_12: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_13: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_14: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_15: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_16: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_17: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_18: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_19: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_20: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_21: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_22: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_23: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_24: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_code_25: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        procedure_date_1: date
-        procedure_date_2: date
-        procedure_date_3: date
-        procedure_date_4: date
-        procedure_date_5: date
-        procedure_date_6: date
-        procedure_date_7: date
-        procedure_date_8: date
-        procedure_date_9: date
-        procedure_date_10: date
-        procedure_date_11: date
-        procedure_date_12: date
-        procedure_date_13: date
-        procedure_date_14: date
-        procedure_date_15: date
-        procedure_date_16: date
-        procedure_date_17: date
-        procedure_date_18: date
-        procedure_date_19: date
-        procedure_date_20: date
-        procedure_date_21: date
-        procedure_date_22: date
-        procedure_date_23: date
-        procedure_date_24: date
-        procedure_date_25: date
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(67) {%- endif -%}
+        days_supply:  integer
+        refills:  integer
+        paid_date:  date
+        paid_amount:  float
+        allowed_amount:  float
         data_source: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-  - name: pharmacy_claim_sample
-    config:
-      database: "{{ var('tuva_database') }}"
-      schema: raw_data
-      tags: tuva_claims_demo
-      enabled: |
-        {% if var('full_data_override') == false -%} {{ true|as_bool }} {%- else -%} {{ false|as_bool }} {%- endif -%}
-      column_types:
-        claim_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        claim_line_number: integer
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        claim_line_number:  integer
         patient_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
         member_id: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
         prescribing_provider_npi: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
         dispensing_provider_npi: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        dispensing_date: date
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        dispensing_date:  date
         ndc_code: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
-        quantity: integer
-        days_supply: integer
-        refills: integer
-        paid_date: date
-        paid_amount: float
-        allowed_amount: float
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(36) {%- endif -%}
+        quantity:  integer
+
+
+  - name: medical_claim
+    config:
+      database: "{{ var('tuva_database') }}"
+      schema: claims_data_model
+      tags: tuva_claims_demo
+      enabled: true
+      column_types:
+        claim_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        admission_date:  date
+        procedure_code_16: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_17: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_18: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_19: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_20: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_21: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_22: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_23: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_24: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_25: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        discharge_date:  date
+        procedure_date_1:  date
+        procedure_date_2:  date
+        procedure_date_3:  date
+        procedure_date_4:  date
+        procedure_date_5:  date
+        procedure_date_6:  date
+        procedure_date_7:  date
+        procedure_date_8:  date
+        procedure_date_9:  date
+        procedure_date_10:  date
+        admit_source_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_date_11:  date
+        procedure_date_12:  date
+        procedure_date_13:  date
+        procedure_date_14:  date
+        procedure_date_15:  date
+        procedure_date_16:  date
+        procedure_date_17:  date
+        procedure_date_18:  date
+        procedure_date_19:  date
+        procedure_date_20:  date
+        admit_type_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_date_21:  date
+        procedure_date_22:  date
+        procedure_date_23:  date
+        procedure_date_24:  date
+        procedure_date_25:  date
         data_source: |
-          {%- if target.type == "bigquery" -%} string {%- else -%} varchar {%- endif -%}
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        discharge_disposition_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(27) {%- endif -%}
+        place_of_service_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(27) {%- endif -%}
+        bill_type_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(28) {%- endif -%}
+        ms_drg_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(28) {%- endif -%}
+        revenue_center_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        service_unit_quantity:  integer
+        claim_line_number:  integer
+        hcpcs_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
+        hcpcs_modifier_1: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(27) {%- endif -%}
+        hcpcs_modifier_2: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(27) {%- endif -%}
+        hcpcs_modifier_3: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(27) {%- endif -%}
+        hcpcs_modifier_4: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        hcpcs_modifier_5: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        rendering_npi: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        billing_npi: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        facility_npi: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        paid_date:  date
+        claim_type: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(38) {%- endif -%}
+        paid_amount:  float
+        allowed_amount:  float
+        charge_amount:  float
+        diagnosis_code_type: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(34) {%- endif -%}
+        diagnosis_code_1: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        diagnosis_code_2: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        diagnosis_code_3: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        diagnosis_code_4: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        diagnosis_code_5: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        diagnosis_code_6: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        patient_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
+        diagnosis_code_7: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_8: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_9: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_10: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_11: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_12: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_13: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
+        diagnosis_code_14: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_15: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
+        diagnosis_code_16: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        member_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_code_17: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_18: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_19: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
+        diagnosis_code_20: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        diagnosis_code_21: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        diagnosis_code_22: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
+        diagnosis_code_23: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        diagnosis_code_24: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        diagnosis_code_25: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_1: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        claim_start_date:  date
+        diagnosis_poa_2: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_3: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_4: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_5: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_6: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_7: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_8: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_9: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_10: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_11: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        claim_end_date:  date
+        diagnosis_poa_12: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_13: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_14: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_15: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_16: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_17: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_18: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_19: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_20: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_21: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        claim_line_start_date:  date
+        diagnosis_poa_22: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_23: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_24: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        diagnosis_poa_25: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_type: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        procedure_code_1: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(32) {%- endif -%}
+        procedure_code_2: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_3: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_4: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_5: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        claim_line_end_date:  date
+        procedure_code_6: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_7: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_8: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_9: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_10: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_11: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_12: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_13: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_14: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        procedure_code_15: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+
+
+  - name: eligibility
+    config:
+      database: "{{ var('tuva_database') }}"
+      schema: claims_data_model
+      tags: tuva_claims_demo
+      enabled: true
+      column_types:
+        patient_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(30) {%- endif -%}
+        payer: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(33) {%- endif -%}
+        payer_type: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(33) {%- endif -%}
+        dual_status_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(27) {%- endif -%}
+        medicare_status_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(27) {%- endif -%}
+        first_name: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        last_name: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        address: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        city: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        state: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(200) {%- endif -%}
+        zip_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        member_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        phone: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        data_source: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(29) {%- endif -%}
+        gender: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(31) {%- endif -%}
+        race: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(33) {%- endif -%}
+        birth_date:  date
+        death_date:  date
+        death_flag:  integer
+        enrollment_start_date:  date
+        enrollment_end_date:  date
+
+
+
+  - name: provider
+    config:
+      database: "{{ var('tuva_database') }}"
+      schema: tuva_terminology
+      tags: nppes
+      enabled: true
+      column_types:
+        npi: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        practice_city: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(65) {%- endif -%}
+        practice_state: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(65) {%- endif -%}
+        practice_zip_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(42) {%- endif -%}
+        entity_type_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(26) {%- endif -%}
+        entity_type_description: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(37) {%- endif -%}
+        primary_taxonomy_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        primary_specialty_description: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(173) {%- endif -%}
+        provider_name: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(95) {%- endif -%}
+        parent_organization_name: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(95) {%- endif -%}
+        practice_address_line_1: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(80) {%- endif -%}
+        practice_address_line_2: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(80) {%- endif -%}
+        last_updated: date
+        deactivation_date: date
+        deactivation_flag: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(80) {%- endif -%}
+
+
+  - name: other_provider_taxonomy
+    config:
+      database: "{{ var('tuva_database') }}"
+      schema: tuva_terminology
+      tags: nppes
+      enabled: true
+      column_types:
+        npi: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        taxonomy_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(35) {%- endif -%}
+        medicare_specialty_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(173) {%- endif -%}
+        description: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(101) {%- endif -%}
+        primary_flag:  integer
+
+
