@@ -1,1 +1,0 @@
-select * from {{ ref('pharmacy_claim_sample') }}
