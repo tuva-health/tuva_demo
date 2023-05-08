@@ -1,8 +1,8 @@
-name: 'tuva_claims_demo'
-version: '0.1.3'
+name: 'the_tuva_project_demo'
+version: '0.1.4'
 config-version: 2
 
-profile: tuva_claims_demo     # Configuration required (your profile to connect dbt to your data warehouse)
+profile: default
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -10,14 +10,7 @@ test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-
 target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
-
-models:
-  tuva_claims_demo:
-    +materialized: view
-    +schema: tuva_claims_demo
-    +tags: tuva_claims_demo

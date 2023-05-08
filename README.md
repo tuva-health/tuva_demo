@@ -1,10 +1,10 @@
 [![Apache License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) ![dbt logo and version](https://img.shields.io/static/v1?logo=dbt&label=dbt-version&message=1.3.x&color=orange)
 
-# Tuva Claims Demo
+# The Tuva Project Demo
 
 ## 🧰 What does this project do?
 
-The Tuva Claims Demo provides a quick and easy way to run the Tuva Project with synthetic demo data. 
+The Tuva Project Demo provides a quick and easy way to run the Tuva Project with synthetic data. 
 The project will run with built-in sample data of 100 patients loaded as dbt seeds.
 
 To set up the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
