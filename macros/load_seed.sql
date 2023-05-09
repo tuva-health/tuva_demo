@@ -52,8 +52,14 @@ copy into {{ this }}
 
 
 {% macro bigquery__load_seed(uri) %}
+{%- set columns = adapter.get_columns_in_relation(this) -%}
+
 {% set sql %}
-load data into {{ this }}
+load data into {{ this }} (
+    {% for column in columns %}
+    {{ column.name }} {{ column.data_type }}{%- if not loop.last %},{% endif %}
+    {% endfor %}
+)
 from files (format = 'csv',
     skip_leading_rows = 1,
     uris = ['gs://{{ uri }}'],
