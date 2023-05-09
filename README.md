@@ -4,8 +4,8 @@
 
 ## 🧰 What does this project do?
 
-The Tuva Project Demo provides a quick and easy way to run the Tuva Project with synthetic data. 
-The project will run with built-in sample data of 100 patients loaded as dbt seeds.
+This demo provides a quick and easy way to run the Tuva Project 
+Package in a dbt project with synthetic data for 1k patients loaded as dbt seeds.
 
 To set up the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 

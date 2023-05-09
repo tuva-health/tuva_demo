@@ -14,3 +14,12 @@ target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
+
+seeds:
+  the_tuva_project_demo:
+    eligibility:
+      +post-hook: "{{ load_seed('tuva-public-resources/tuva_synthetic_data/eligibility.csv') }}"
+    medical_claim:
+      +post-hook: "{{ load_seed('tuva-public-resources/tuva_synthetic_data/medical_claim.csv') }}"
+    pharmacy_claim:
+      +post-hook: "{{ load_seed('tuva-public-resources/tuva_synthetic_data/pharmacy_claim.csv') }}"
