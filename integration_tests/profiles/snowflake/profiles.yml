@@ -1,7 +1,7 @@
   default:
     outputs:
       dev:
-        account: "{{ env_var('DBT_SNOWFLAKE_CI_ACCOUNT') }}"
+        account: "{{ env_var('DBT_TUVA_SNOWFLAKE_ACCOUNT') }}"
         database: "{{ env_var('DBT_TUVA_CI_DATABASE') }}"
         password: "{{ env_var('DBT_SNOWFLAKE_CI_PASSWORD') }}"
         role: "{{ env_var('DBT_SNOWFLAKE_CI_ROLE') }}"
