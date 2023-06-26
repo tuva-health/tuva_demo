@@ -1,4 +1,4 @@
-name: biweekly_dbt_v1.4.6_redshift_build_full_refresh
+name: weekly_dbt_v1.4.6_redshift_build_full_refresh
 
 on:
   workflow_dispatch:
@@ -12,7 +12,7 @@ env:
   DBT_REDSHIFT_CI_PASSWORD: ${{ secrets.DBT_REDSHIFT_CI_PASSWORD }}
   DBT_REDSHIFT_CI_PORT: ${{ secrets.DBT_REDSHIFT_CI_PORT }}
   DBT_TUVA_CI_DATABASE: ${{ secrets.DBT_TUVA_CI_DATABASE }}
-  
+
 jobs:
   action:
     runs-on: ubuntu-latest
@@ -21,17 +21,17 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: dbt-deps
-        uses: mwhitaker/dbt-action@v1.3.0
+        uses: mwhitaker/dbt-action@v1.4.6
         with:
           dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/redshift"
-          
+
       - name: dbt-debug
-        uses: mwhitaker/dbt-action@v1.3.0
+        uses: mwhitaker/dbt-action@v1.4.6
         with:
           dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/redshift"
 
       - name: dbt-build
-        uses: mwhitaker/dbt-action@v1.3.0
+        uses: mwhitaker/dbt-action@v1.4.6
         with:
           dbt_command: "dbt build --full-refresh --profiles-dir ./integration_tests/profiles/redshift"
 
