@@ -2,7 +2,7 @@ default:
   outputs:
     dev:
       connect_timeout: 120
-      dbname: tuva_project_demo
+      dbname:  "{{ env_var('DBT_TUVA_CI_DATABASE') }}"
       host: "{{ env_var('DBT_REDSHIFT_CI_HOST') }}"
       keepalives_idle: 240
       password: "{{ env_var('DBT_REDSHIFT_CI_PASSWORD') }}"
