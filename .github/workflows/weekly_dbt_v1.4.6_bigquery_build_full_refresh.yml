@@ -1,4 +1,4 @@
-name: biweekly_dbt_v1.4.6_bigquery_build_full_refresh
+name: weekly_dbt_v1.4.6_bigquery_build_full_refresh
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
 env:
   DBT_BIGQUERY_TOKEN: ${{ secrets.TUVA_BIGQUERY_TOKEN }}
   TUVA_BIGQUERY_PROJECT: ${{ secrets.TUVA_BIGQUERY_PROJECT }}
-  
+
 jobs:
   action:
     runs-on: ubuntu-latest
@@ -18,17 +18,17 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: dbt-deps
-        uses: mwhitaker/dbt-action@v1.3.0
+        uses: mwhitaker/dbt-action@v1.4.6
         with:
           dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/bigquery"
-          
+
       - name: dbt-debug
-        uses: mwhitaker/dbt-action@v1.3.0
+        uses: mwhitaker/dbt-action@v1.4.6
         with:
           dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/bigquery"
 
       - name: dbt-build
-        uses: mwhitaker/dbt-action@v1.3.0
+        uses: mwhitaker/dbt-action@v1.4.6
         with:
           dbt_command: "dbt build --full-refresh --profiles-dir ./integration_tests/profiles/bigquery "
 
