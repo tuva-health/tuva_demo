@@ -30,7 +30,7 @@ jobs:
       - name: dbt-build
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: "dbt build --full-refresh --profiles-dir ./integration_tests/profiles/bigquery "
+          dbt_command: "dbt build --full-refresh --vars '{cms_hcc_payment_year: 2019}' --profiles-dir ./integration_tests/profiles/bigquery"
 
       - name: Get the result
         if: ${{ always() }}
