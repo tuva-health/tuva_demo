@@ -4,6 +4,16 @@ config-version: 2
 
 profile: default
 
+vars:
+
+  ## CMS HCC data mart vars
+  # Setting the payment year to year needed for the demo data
+  cms_hcc_payment_year: 2019
+
+  ## Quality Measure data mart vars
+  # Setting the reporting period to date needed for demo data
+  quality_measure_reporting_period_end: "2018-12-31"
+
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
