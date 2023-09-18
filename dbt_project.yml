@@ -1,5 +1,5 @@
 name: 'the_tuva_project_demo'
-version: '0.1.4'
+version: '0.1.5'
 config-version: 2
 
 profile: default
@@ -14,7 +14,7 @@ vars:
 
   ## Quality Measure data mart vars
   # Setting the reporting period to date needed for demo data
-  quality_measure_reporting_period_end: "2018-12-31"
+  quality_measures_period_end: "2018-12-31"
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]

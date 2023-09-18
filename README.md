@@ -9,7 +9,7 @@ Package in a dbt project with synthetic data for 1k patients loaded as dbt seeds
 
 To set up the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 
-For information on data models and to view the entire DAG check out our dbt [Docs](https://tuva-health.github.io/tuva_claims_demo/#!/overview).
+For information on data models and to view the entire DAG check out our dbt [Docs](https://tuva-health.github.io/the_tuva_project_demo/).
 
 ## 🔌 Database Support
 
