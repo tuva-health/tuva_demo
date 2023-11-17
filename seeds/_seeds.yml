@@ -23,6 +23,8 @@ seeds:
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         payer_type: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        plan: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         original_reason_entitlement_code: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         dual_status_code: |
@@ -59,6 +61,10 @@ seeds:
         patient_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         member_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        payer: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        plan: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         claim_start_date: date
         claim_end_date: date
@@ -103,9 +109,12 @@ seeds:
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         paid_date: date
         paid_amount: float
-        total_cost_amount: float
         allowed_amount: float
         charge_amount: float
+        coinsurace_amount: float
+        copayment_amount: float
+        deductible_amount: float
+        total_cost_amount: float
         diagnosis_code_type: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         diagnosis_code_1: |
@@ -300,6 +309,10 @@ seeds:
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         member_id: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        payer: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        plan: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         prescribing_provider_npi: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
         dispensing_provider_npi: |
@@ -313,5 +326,8 @@ seeds:
         paid_date: date
         paid_amount: float
         allowed_amount: float
+        coinsurace_amount: float
+        copayment_amount: float
+        deductible_amount: float
         data_source: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
