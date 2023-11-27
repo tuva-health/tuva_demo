@@ -111,7 +111,7 @@ seeds:
         paid_amount: float
         allowed_amount: float
         charge_amount: float
-        coinsurace_amount: float
+        coinsurance_amount: float
         copayment_amount: float
         deductible_amount: float
         total_cost_amount: float
