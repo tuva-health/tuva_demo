@@ -1,0 +1,43 @@
+name: weekly_dbt_v1.4.6_snowflake_prod_build_full_refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # This job will run at midnight on Fridays
+    - cron: '0 0 * * FRI'
+
+env:
+  DBT_TUVA_SNOWFLAKE_ACCOUNT: ${{ secrets.DBT_TUVA_SNOWFLAKE_ACCOUNT_PROD }}
+  DBT_SNOWFLAKE_CI_USER: ${{ secrets.DBT_SNOWFLAKE_CI_USER_PROD }}
+  DBT_SNOWFLAKE_CI_PASSWORD: ${{ secrets.DBT_SNOWFLAKE_CI_PASSWORD_PROD }}
+  DBT_TUVA_CI_DATABASE: ${{ secrets.DBT_TUVA_CI_DATABASE }}
+  DBT_SNOWFLAKE_CI_ROLE: ${{ secrets.DBT_SNOWFLAKE_CI_ROLE }}
+  DBT_SNOWFLAKE_CI_SCHEMA: ${{ secrets.DBT_SNOWFLAKE_CI_SCHEMA }}
+  DBT_SNOWFLAKE_CI_WAREHOUSE: ${{ secrets.DBT_SNOWFLAKE_CI_WAREHOUSE }}
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: dbt-deps
+        uses: mwhitaker/dbt-action@v1.4.6
+        with:
+          dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/snowflake_prod"
+
+      - name: dbt-debug
+        uses: mwhitaker/dbt-action@v1.4.6
+        with:
+          dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/snowflake_prod"
+
+      - name: dbt-build
+        uses: mwhitaker/dbt-action@v1.4.6
+        with:
+          dbt_command: "dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_prod"
+
+      - name: Get the result
+        if: ${{ always() }}
+        run: echo "${{ steps.dbt-build.outputs.result }}"
+        shell: bash
