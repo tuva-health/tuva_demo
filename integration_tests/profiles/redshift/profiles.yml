@@ -2,8 +2,8 @@ default:
   outputs:
     dev:
       connect_timeout: 120
-      dbname:  "{{ env_var('DBT_TUVA_CI_DATABASE') }}"
-      host: "{{ env_var('DBT_REDSHIFT_CI_HOST') }}"
+      dbname:  "{{ env_var('DBT_REDSHIFT_CI_DATABASE') }}"
+      host: "{{ env_var('DBT_REDSHIFT_HOST') }}"
       keepalives_idle: 240
       password: "{{ env_var('DBT_REDSHIFT_CI_PASSWORD') }}"
       port: 5439
