@@ -3,7 +3,7 @@ version: 2
 seeds:
   - name: eligibility
     config:
-      schema: tuva_synthetic
+      schema: input_layer
       tags: the_tuva_project_demo
       column_types:
         patient_id: |
@@ -50,7 +50,7 @@ seeds:
 
   - name: medical_claim
     config:
-      schema: tuva_synthetic
+      schema: input_layer
       tags: the_tuva_project_demo
       column_types:
         claim_id: |
@@ -299,7 +299,7 @@ seeds:
 
   - name: pharmacy_claim
     config:
-      schema: tuva_synthetic
+      schema: input_layer
       tags: the_tuva_project_demo
       column_types:
         claim_id: |
