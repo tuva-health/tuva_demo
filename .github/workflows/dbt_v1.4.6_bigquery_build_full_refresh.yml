@@ -7,7 +7,7 @@ on:
       - main
 
 env:
-  DBT_BIGQUERY_CI_TOKEN: ${{ secrets.DBT_BIGQUERY_CI_TOKEN }}
+  DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_CI_TOKEN }}
   DBT_BIGQUERY_CI_PROJECT: ${{ secrets.DBT_BIGQUERY_CI_PROJECT }}
   
 jobs:
