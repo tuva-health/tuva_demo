@@ -8,6 +8,7 @@ on:
 
 env:
   DBT_SNOWFLAKE_DEV_ACCOUNT: ${{ secrets.DBT_SNOWFLAKE_DEV_ACCOUNT }}
+  DBT_SNOWFLAKE_DEV_CI_DATABASE: ${{ secrets.DBT_SNOWFLAKE_DEV_CI_DATABASE }}
   DBT_SNOWFLAKE_DEV_DATABASE: ${{ secrets.DBT_SNOWFLAKE_DEV_DATABASE }}
   DBT_SNOWFLAKE_DEV_CI_PASSWORD: ${{ secrets.DBT_SNOWFLAKE_DEV_CI_PASSWORD }}
   DBT_SNOWFLAKE_DEV_CI_ROLE: ${{ secrets.DBT_SNOWFLAKE_DEV_CI_ROLE }}
@@ -25,17 +26,17 @@ jobs:
       - name: dbt-deps
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/snowflake_dev"
+          dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/snowflake_dev --target dev"
 
       - name: dbt-debug
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/snowflake_dev"
+          dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/snowflake_dev --target dev"
 
       - name: dbt-build
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: "dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_dev"
+          dbt_command: "dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_dev --target dev"
 
       - name: Get the result
         if: ${{ always() }}
