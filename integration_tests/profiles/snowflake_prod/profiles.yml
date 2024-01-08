@@ -1,0 +1,13 @@
+  default:
+    outputs:
+      dev:
+        account: "{{ env_var('DBT_SNOWFLAKE_PROD_ACCOUNT') }}"
+        database: "{{ env_var('DBT_SNOWFLAKE_PROD_DATABASE') }}"
+        password: "{{ env_var('DBT_SNOWFLAKE_PROD_PASSWORD') }}"
+        role: "{{ env_var('DBT_SNOWFLAKE_PROD_ROLE') }}"
+        schema: "{{ env_var('DBT_SNOWFLAKE_PROD_SCHEMA') }}"
+        threads: 5
+        type: snowflake
+        user: "{{ env_var('DBT_SNOWFLAKE_PROD_USER') }}"
+        warehouse: "{{ env_var('DBT_SNOWFLAKE_PROD_WAREHOUSE') }}"
+    target: dev

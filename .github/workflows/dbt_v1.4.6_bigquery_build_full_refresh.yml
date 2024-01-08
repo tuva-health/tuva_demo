@@ -7,8 +7,8 @@ on:
       - main
 
 env:
-  DBT_BIGQUERY_TOKEN: ${{ secrets.TUVA_BIGQUERY_TOKEN }}
-  TUVA_BIGQUERY_PROJECT: ${{ secrets.TUVA_BIGQUERY_PROJECT }}
+  DBT_BIGQUERY_TOKEN: ${{ secrets.DBT_BIGQUERY_CI_TOKEN }}
+  DBT_BIGQUERY_CI_PROJECT: ${{ secrets.DBT_BIGQUERY_CI_PROJECT }}
   
 jobs:
   action:
@@ -30,7 +30,7 @@ jobs:
       - name: dbt-build
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: "dbt build --full-refresh --profiles-dir ./integration_tests/profiles/bigquery"
+          dbt_command: 'dbt build --full-refresh --profiles-dir ./integration_tests/profiles/bigquery --vars {"tuva_schema_prefix":"demo"}'
 
       - name: Get the result
         if: ${{ always() }}
