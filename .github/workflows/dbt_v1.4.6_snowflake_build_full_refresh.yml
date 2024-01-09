@@ -25,17 +25,17 @@ jobs:
       - name: dbt-deps
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/snowflake_dev"
+          dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/snowflake_dev --target ci"
           
       - name: dbt-debug
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/snowflake_dev"
+          dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/snowflake_dev --target ci"
 
       - name: dbt-build
         uses: mwhitaker/dbt-action@v1.4.6
         with:
-          dbt_command: 'dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_dev --vars {"tuva_schema_prefix":"demo"}'
+          dbt_command: 'dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_dev --target ci --vars {"tuva_schema_prefix":"demo"}'
 
       - name: Get the result
         if: ${{ always() }}
