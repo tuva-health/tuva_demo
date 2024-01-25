@@ -1,0 +1,43 @@
+version: 2
+
+models:
+# Empty placeholder tables
+  - name: condition
+    config:
+      schema: input_layer
+      tags: tuva_demo
+
+  - name: encounter
+    config:
+      schema: input_layer
+      tags: tuva_demo
+
+  - name: location
+    config:
+      schema: input_layer
+      tags: tuva_demo
+
+  - name: medication
+    config:
+      schema: input_layer
+      tags: tuva_demo
+
+  - name: observation
+    config:
+      schema: input_layer
+      tags: tuva_demo
+
+  - name: patient
+    config:
+      schema: input_layer
+      tags: tuva_demo
+
+  - name: practitioner
+    config:
+      schema: input_layer
+      tags: tuva_demo
+
+  - name: procedure
+    config:
+      schema: input_layer
+      tags: tuva_demo
