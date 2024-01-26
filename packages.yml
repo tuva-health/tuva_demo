@@ -1,3 +1,5 @@
 packages:
   - package: tuva-health/the_tuva_project
     version: [">=0.7.0","<0.8.0"]
+  - package: dbt-labs/dbt_utils
+    version: [ ">=0.9.2" ]
