@@ -1,0 +1,6 @@
+packages:
+- package: tuva-health/the_tuva_project
+  version: 0.7.8
+- package: dbt-labs/dbt_utils
+  version: 1.1.1
+sha1_hash: 87f90034a022a3427643ab67c7314f2831b13247
