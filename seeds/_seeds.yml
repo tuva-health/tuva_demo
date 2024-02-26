@@ -355,6 +355,51 @@ seeds:
         data_source: |
           {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
 
+  - name: observation
+    config:
+      schema: input_layer
+      tags: tuva_demo
+      column_types:
+        observation_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        patient_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        encounter_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        panel_id: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        observation_date: date
+        observation_type: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        source_code_type: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        source_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        source_description: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        normalized_code_type: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        normalized_code: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        normalized_description: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        result: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        source_units: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        normalized_units: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        source_reference_range_low: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        source_reference_range_high: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        normalized_reference_range_low: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        normalized_reference_range_high: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+        data_source: |
+          {%- if target.type == "bigquery" -%} string {%- else -%} varchar(255) {%- endif -%}
+
   - name: pharmacy_claim
     config:
       schema: input_layer
