@@ -22,11 +22,6 @@ models:
       schema: input_layer
       tags: tuva_demo
 
-  - name: observation
-    config:
-      schema: input_layer
-      tags: tuva_demo
-
   - name: patient
     config:
       schema: input_layer

@@ -1,5 +1,5 @@
 name: 'the_tuva_project_demo'
-version: '0.1.6'
+version: '0.1.7'
 config-version: 2
 
 profile: default
@@ -36,5 +36,7 @@ seeds:
       +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/tuva_synthetic_data','lab_result.csv',headers=true) }}"
     medical_claim:
       +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/tuva_synthetic_data','medical_claim.csv',headers=true) }}"
+    observation:
+      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/tuva_synthetic_data','observation.csv',headers=true) }}"
     pharmacy_claim:
       +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/tuva_synthetic_data','pharmacy_claim.csv',headers=true) }}"
