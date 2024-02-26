@@ -5,7 +5,7 @@ config-version: 2
 profile: default
 
 vars:
-  tuva_schema_prefix: demo
+
   claims_enabled: true
   clinical_enabled: true
 
