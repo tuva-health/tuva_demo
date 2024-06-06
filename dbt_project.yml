@@ -11,7 +11,7 @@ vars:
 
   ## CMS HCC data mart vars
   # Setting the payment year to year needed for the demo data
-  cms_hcc_payment_year: 2019
+  cms_hcc_payment_year: 2018
 
   ## Quality Measure data mart vars
   # Setting the reporting period to date needed for demo data
