@@ -4,7 +4,7 @@ default:
     dev:
       type: bigquery
       method: service-account
-      keyfile: .github/tuva-project-demo-033bedc4dd96.json
+      keyfile: ./creds.json
       project: "{{ env_var('DBT_BIGQUERY_DEMO_PROJECT') }}"
       dataset: connector
       threads: 4
