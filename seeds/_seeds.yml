@@ -360,6 +360,7 @@ seeds:
         procedure_date_23: date
         procedure_date_24: date
         procedure_date_25: date
+        in_network_flag: integer
         data_source: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         file_name: |
@@ -448,6 +449,7 @@ seeds:
         coinsurace_amount: float
         copayment_amount: float
         deductible_amount: float
+        in_network_flag: integer
         data_source: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         file_name: |
