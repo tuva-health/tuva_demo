@@ -1,12 +1,14 @@
-name: dbt_v1.4.6_snowflake_build_full_refresh
+name: dbt_v1.6.3_snowflake_build_full_refresh
 
 on:
   workflow_dispatch:
-
+  pull_request:
+    branches:
+      - main
 
 env:
   DBT_SNOWFLAKE_DEV_ACCOUNT: ${{ secrets.DBT_SNOWFLAKE_DEV_ACCOUNT }}
-  DBT_SNOWFLAKE_DEV_CI_DATABASE: ${{ secrets.DBT_SNOWFLAKE_DEV_CI_DATABASE }}
+  DBT_SNOWFLAKE_DEV_DATABASE: ${{ secrets.DBT_SNOWFLAKE_DEV_DATABASE }}
   DBT_SNOWFLAKE_DEV_CI_PASSWORD: ${{ secrets.DBT_SNOWFLAKE_DEV_CI_PASSWORD }}
   DBT_SNOWFLAKE_DEV_CI_ROLE: ${{ secrets.DBT_SNOWFLAKE_DEV_CI_ROLE }}
   DBT_SNOWFLAKE_DEV_CI_SCHEMA: ${{ secrets.DBT_SNOWFLAKE_DEV_CI_SCHEMA }}
@@ -21,19 +23,19 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: dbt-deps
-        uses: mwhitaker/dbt-action@v1.4.6
+        uses: mwhitaker/dbt-action@v1.6.3
         with:
-          dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/snowflake_dev --target ci"
+          dbt_command: "dbt deps --profiles-dir ./integration_tests/profiles/snowflake_dev"
           
       - name: dbt-debug
-        uses: mwhitaker/dbt-action@v1.4.6
+        uses: mwhitaker/dbt-action@v1.6.3
         with:
-          dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/snowflake_dev --target ci"
+          dbt_command: "dbt debug --profiles-dir ./integration_tests/profiles/snowflake_dev"
 
       - name: dbt-build
-        uses: mwhitaker/dbt-action@v1.4.6
+        uses: mwhitaker/dbt-action@v1.6.3
         with:
-          dbt_command: 'dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_dev --target ci --vars {"tuva_schema_prefix":"demo"}'
+          dbt_command: 'dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_dev'
 
       - name: Get the result
         if: ${{ always() }}

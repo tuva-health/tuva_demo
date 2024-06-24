@@ -20,4 +20,4 @@
         type: snowflake
         user: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_USER') }}"
         warehouse: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_WAREHOUSE') }}"
-    target: ci
+    target: dev

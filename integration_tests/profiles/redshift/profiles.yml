@@ -2,7 +2,19 @@ default:
   outputs:
     dev:
       connect_timeout: 120
-      dbname:  "{{ env_var('DBT_REDSHIFT_CI_DATABASE') }}"
+      dbname:  "{{ env_var('DBT_REDSHIFT_DEMO_DATABASE') }}"
+      host: "{{ env_var('DBT_REDSHIFT_HOST') }}"
+      keepalives_idle: 240
+      password: "{{ env_var('DBT_REDSHIFT_CI_PASSWORD') }}"
+      port: 5439
+      ra3_node: true
+      schema: default
+      threads: 2
+      type: redshift
+      user: "{{ env_var('DBT_REDSHIFT_CI_USER') }}"
+    ci:
+      connect_timeout: 120
+      dbname: "{{ env_var('DBT_REDSHIFT_CI_DATABASE') }}"
       host: "{{ env_var('DBT_REDSHIFT_HOST') }}"
       keepalives_idle: 240
       password: "{{ env_var('DBT_REDSHIFT_CI_PASSWORD') }}"
