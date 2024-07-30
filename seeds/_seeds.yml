@@ -468,4 +468,4 @@ seeds:
         file_name: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         ingest_datetime: |
-          {%- if target.type in ("postgres". "databricks") -%} timestamp {%- else -%} datetime {%- endif -%}
+          {%- if target.type in ("postgres", "databricks") -%} timestamp {%- else -%} datetime {%- endif -%}
