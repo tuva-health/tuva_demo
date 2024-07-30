@@ -56,7 +56,7 @@ seeds:
         file_name: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         ingest_datetime: | 
-          {%- if target.type in ("postgres") -%} timestamp {%- else -%} datetime {%- endif -%}
+          {%- if target.type in ("postgres", "databricks") -%} timestamp {%- else -%} datetime {%- endif -%}
 
   - name: lab_result
     config:
@@ -116,7 +116,7 @@ seeds:
         file_name: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         ingest_datetime: |
-          {%- if target.type in ("postgres") -%} timestamp {%- else -%} datetime {%- endif -%}
+          {%- if target.type in ("postgres", "databricks") -%} timestamp {%- else -%} datetime {%- endif -%}
         tuva_last_run: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
 
@@ -376,7 +376,7 @@ seeds:
         file_name: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         ingest_datetime: |
-          {%- if target.type in ("postgres") -%} timestamp {%- else -%} datetime {%- endif -%}
+          {%- if target.type in ("postgres", "databricks") -%} timestamp {%- else -%} datetime {%- endif -%}
 
 
   - name: observation
@@ -426,7 +426,7 @@ seeds:
         file_name: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         ingest_datetime: |
-          {%- if target.type in ("postgres") -%} timestamp {%- else -%} datetime {%- endif -%}
+          {%- if target.type in ("postgres", "databricks") -%} timestamp {%- else -%} datetime {%- endif -%}
 
 
   - name: pharmacy_claim
@@ -468,4 +468,4 @@ seeds:
         file_name: |
           {%- if target.type in ("bigquery", "databricks") -%} string {%- else -%} varchar(255) {%- endif -%}
         ingest_datetime: |
-          {%- if target.type in ("postgres") -%} timestamp {%- else -%} datetime {%- endif -%}
+          {%- if target.type in ("postgres". "databricks") -%} timestamp {%- else -%} datetime {%- endif -%}
