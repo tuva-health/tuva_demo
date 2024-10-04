@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.race (code varchar(256),description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

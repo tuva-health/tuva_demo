@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.cms_hcc._value_set_disabled_interaction_factors (model_version varchar(256),factor_type varchar(256),enrollment_status varchar(256),institutional_status varchar(256),short_name varchar(256),description varchar(256),hcc_code varchar(256),coefficient float)
+  ;
+    -- dbt seed --
+    
+
+;
+  

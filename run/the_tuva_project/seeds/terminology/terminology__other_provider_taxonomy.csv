@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.other_provider_taxonomy (npi varchar(35),taxonomy_code varchar(35),medicare_specialty_code varchar(173),description varchar(101),primary_flag integer)
+  ;
+    -- dbt seed --
+    
+
+;
+  

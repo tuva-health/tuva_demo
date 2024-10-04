@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.snomed_ct (snomed_ct varchar(256),description varchar(256),is_active varchar(256),created date,last_updated date)
+  ;
+    -- dbt seed --
+    
+
+;
+  

@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.icd_9_pcs (icd_9_pcs varchar(256),long_description varchar(256),short_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

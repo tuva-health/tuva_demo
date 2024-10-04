@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.input_layer.lab_result (lab_result_id varchar(255),patient_id varchar(255),encounter_id varchar(255),accession_number varchar(255),source_code_type varchar(255),source_code varchar(255),source_description varchar(255),source_component varchar(255),normalized_code_type varchar(255),normalized_code varchar(255),normalized_description varchar(255),normalized_component varchar(255),status varchar(255),result varchar(255),result_date date,collection_date date,source_units varchar(255),normalized_units varchar(255),source_reference_range_low varchar(255),source_reference_range_high varchar(255),normalized_reference_range_low varchar(255),normalized_reference_range_high varchar(255),source_abnormal_flag integer,normalized_abnormal_flag integer,specimen varchar(255),ordering_practitioner_id varchar(255),data_source varchar(255),file_name varchar(255),ingest_datetime datetime)
+  ;
+    -- dbt seed --
+    
+
+;
+  

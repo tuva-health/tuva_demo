@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.hcc_suspecting._value_set_hcc_descriptions (hcc_code varchar(256),hcc_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

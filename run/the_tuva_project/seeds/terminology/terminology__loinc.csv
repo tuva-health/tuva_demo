@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.loinc (loinc varchar(256),short_name varchar(256),long_common_name varchar(256),component varchar(256),property varchar(256),time_aspect varchar(256),system varchar(256),scale_type varchar(256),method_type varchar(256),class_code varchar(256),class_description varchar(256),class_type_code varchar(256),class_type_description varchar(256),external_copyright_notice varchar(3000),status varchar(256),version_first_released varchar(256),version_last_changed varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

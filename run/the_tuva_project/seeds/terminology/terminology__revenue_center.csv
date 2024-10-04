@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.revenue_center (revenue_center_code varchar(256),revenue_center_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

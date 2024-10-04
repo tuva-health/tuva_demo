@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.reference_data.fips_county (fips_code varchar(256),county varchar(256),state varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

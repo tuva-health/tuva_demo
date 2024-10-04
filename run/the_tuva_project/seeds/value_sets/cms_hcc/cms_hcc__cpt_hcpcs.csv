@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.cms_hcc._value_set_cpt_hcpcs (payment_year integer,hcpcs_cpt_code varchar(256),included_flag varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

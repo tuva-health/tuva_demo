@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.readmissions._value_set_icd_10_pcs_to_ccs (icd_10_pcs varchar(256),description varchar(256),ccs_procedure_category varchar(256),ccs_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

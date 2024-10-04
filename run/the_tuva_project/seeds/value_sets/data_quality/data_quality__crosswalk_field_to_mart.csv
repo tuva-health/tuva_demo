@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.data_quality._value_set_crosswalk_field_to_mart (input_layer_table_name varchar(256),claim_type varchar(256),field_name varchar(256),mart_name varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

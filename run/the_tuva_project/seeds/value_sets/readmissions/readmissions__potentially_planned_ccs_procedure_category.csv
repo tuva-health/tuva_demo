@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.readmissions._value_set_potentially_planned_ccs_procedure_category (ccs_procedure_category varchar(256),description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

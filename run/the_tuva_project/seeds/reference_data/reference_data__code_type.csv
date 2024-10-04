@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.reference_data.code_type (code_type varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

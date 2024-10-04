@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.snomed_ct_transitive_closures (parent_snomed_code varchar(256),parent_description varchar(256),child_snomed_code varchar(256),child_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

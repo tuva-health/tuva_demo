@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.readmissions._value_set_specialty_cohort (ccs varchar(256),description varchar(256),specialty_cohort varchar(256),procedure_or_diagnosis varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

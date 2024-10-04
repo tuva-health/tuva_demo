@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.rxnorm_to_atc (rxcui varchar(256),rxnorm_description varchar(3000),atc_1_code varchar(256),atc_1_name varchar(256),atc_2_code varchar(256),atc_2_name varchar(256),atc_3_code varchar(256),atc_3_name varchar(256),atc_4_code varchar(256),atc_4_name varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

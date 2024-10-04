@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.present_on_admission (present_on_admit_code varchar(256),present_on_admit_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

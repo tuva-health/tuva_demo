@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.input_layer.eligibility (patient_id varchar(255),member_id varchar(255),subscriber_id varchar(255),gender varchar(255),race varchar(255),birth_date date,death_date date,death_flag integer,enrollment_start_date date,enrollment_end_date date,payer varchar(255),payer_type varchar(255),plan varchar(255),original_reason_entitlement_code varchar(255),dual_status_code varchar(255),medicare_status_code varchar(255),first_name varchar(255),last_name varchar(255),social_security_number varchar(255),subscriber_relation varchar(255),address varchar(255),city varchar(255),state varchar(255),zip_code varchar(255),phone varchar(255),data_source varchar(255),file_name varchar(255),ingest_datetime datetime)
+  ;
+    -- dbt seed --
+    
+
+;
+  

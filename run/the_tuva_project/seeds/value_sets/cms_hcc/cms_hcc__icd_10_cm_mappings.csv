@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.cms_hcc._value_set_icd_10_cm_mappings (payment_year integer,diagnosis_code varchar(256),cms_hcc_v24 varchar(256),cms_hcc_v24_flag varchar(256),cms_hcc_v28 varchar(256),cms_hcc_v28_flag varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

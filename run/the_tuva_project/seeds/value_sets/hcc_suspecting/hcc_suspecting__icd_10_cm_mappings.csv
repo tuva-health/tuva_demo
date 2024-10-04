@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.hcc_suspecting._value_set_icd_10_cm_mappings (diagnosis_code varchar(256),cms_hcc_esrd_v21 varchar(256),cms_hcc_esrd_v24 varchar(256),cms_hcc_v22 varchar(256),cms_hcc_v24 varchar(256),cms_hcc_v28 varchar(256),rx_hcc_v05 varchar(256),rx_hcc_v08 varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

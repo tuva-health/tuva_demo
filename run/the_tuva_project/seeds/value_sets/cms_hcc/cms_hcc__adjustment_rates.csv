@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.cms_hcc._value_set_adjustment_rates (model_version varchar(256),payment_year integer,normalization_factor float,ma_coding_pattern_adjustment float)
+  ;
+    -- dbt seed --
+    
+
+;
+  

@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.ms_drg_weights_los (ms_drg varchar(256),fy_2024_final_post_acute_drg varchar(256),fy_2024_final_special_pay_drg varchar(256),mdc varchar(256),type varchar(256),ms_drg_title varchar(256),drg_weight_raw numeric(18,4),drg_weight numeric(18,4),geometric_mean_los numeric(18,2),arithmetic_mean_los numeric(18,2))
+  ;
+    -- dbt seed --
+    
+
+;
+  

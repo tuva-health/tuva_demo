@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.ndc (ndc varchar(256),rxcui varchar(256),rxnorm_description varchar(3000),fda_description varchar(3000))
+  ;
+    -- dbt seed --
+    
+
+;
+  

@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.admit_type (admit_type_code varchar(256),admit_type_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

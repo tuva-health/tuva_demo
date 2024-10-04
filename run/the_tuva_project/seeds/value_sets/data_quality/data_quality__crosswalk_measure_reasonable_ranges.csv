@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.data_quality._value_set_crosswalk_measure_reasonable_ranges (measure_name varchar(256),payer_type varchar(256),lower_bound float,upper_bound float)
+  ;
+    -- dbt seed --
+    
+
+;
+  

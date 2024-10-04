@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.quality_measures._value_set_measures (id varchar(256),name varchar(256),description varchar(3000),version varchar(256),steward varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

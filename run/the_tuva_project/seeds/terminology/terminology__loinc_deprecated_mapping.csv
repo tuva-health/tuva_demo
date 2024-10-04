@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.loinc_deprecated_mapping (loinc varchar(256),map_to varchar(256),comment varchar(256),final_map_to varchar(256),all_comments varchar(256),depth varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

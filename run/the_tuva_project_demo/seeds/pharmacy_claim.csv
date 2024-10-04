@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.input_layer.pharmacy_claim (claim_id varchar(255),claim_line_number integer,patient_id varchar(255),member_id varchar(255),payer varchar(255),plan varchar(255),prescribing_provider_npi varchar(255),dispensing_provider_npi varchar(255),dispensing_date date,ndc_code varchar(255),quantity integer,days_supply integer,refills integer,paid_date date,paid_amount float,allowed_amount float,charge_amount float,coinsurance_amount float,copayment_amount float,deductible_amount float,in_network_flag integer,data_source varchar(255),file_name varchar(255),ingest_datetime datetime)
+  ;
+    -- dbt seed --
+    
+
+;
+  

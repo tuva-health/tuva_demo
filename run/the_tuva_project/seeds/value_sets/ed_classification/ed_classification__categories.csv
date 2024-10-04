@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.ed_classification._value_set_categories (classification varchar(256),classification_name varchar(256),classification_order varchar(256),classification_column varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

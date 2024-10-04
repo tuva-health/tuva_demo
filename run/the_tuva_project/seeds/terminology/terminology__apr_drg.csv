@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.apr_drg (apr_drg_code varchar(256),medical_surgical varchar(256),mdc_code varchar(256),apr_drg_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

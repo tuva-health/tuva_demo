@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.ccsr._value_set_prccsr_v2023_1_cleaned_map (icd_10_pcs varchar(256),icd_10_pcs_description varchar(256),prccsr varchar(256),prccsr_description varchar(256),clinical_domain varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

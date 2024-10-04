@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.input_layer.observation (observation_id varchar(255),patient_id varchar(255),encounter_id varchar(255),panel_id varchar(255),observation_date date,observation_type varchar(255),source_code_type varchar(255),source_code varchar(255),source_description varchar(255),normalized_code_type varchar(255),normalized_code varchar(255),normalized_description varchar(255),result varchar(255),source_units varchar(255),normalized_units varchar(255),source_reference_range_low varchar(255),source_reference_range_high varchar(255),normalized_reference_range_low varchar(255),normalized_reference_range_high varchar(255),data_source varchar(255),file_name varchar(255),ingest_datetime datetime)
+  ;
+    -- dbt seed --
+    
+
+;
+  

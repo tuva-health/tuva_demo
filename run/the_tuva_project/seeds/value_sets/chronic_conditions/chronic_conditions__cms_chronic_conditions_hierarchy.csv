@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.chronic_conditions._value_set_cms_chronic_conditions_hierarchy (condition_id varchar(256),condition varchar(256),condition_column_name varchar(256),chronic_condition_type varchar(256),condition_category varchar(256),additional_logic varchar(256),claims_qualification varchar(1024),inclusion_type varchar(256),code_system varchar(256),code varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

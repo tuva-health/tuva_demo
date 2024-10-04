@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.payer_type (payer_type varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

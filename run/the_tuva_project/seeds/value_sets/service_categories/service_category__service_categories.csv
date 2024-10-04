@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.claims_preprocessing._value_set_service_categories (service_category_1 varchar(256),service_category_2 varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

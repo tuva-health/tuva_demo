@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.readmissions._value_set_acute_diagnosis_ccs (ccs_diagnosis_category varchar(256),description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

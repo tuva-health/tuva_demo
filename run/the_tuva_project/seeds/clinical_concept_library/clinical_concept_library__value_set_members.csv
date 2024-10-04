@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.clinical_concept_library.value_set_members (value_set_member_id varchar(256),concept_id varchar(256),status varchar(256),last_update_date date,last_update_note varchar(256),code varchar(256),code_description varchar(2000),coding_system_id varchar(256),coding_system_version varchar(256),include_descendants varchar(256),comment varchar(2000))
+  ;
+    -- dbt seed --
+    
+
+;
+  

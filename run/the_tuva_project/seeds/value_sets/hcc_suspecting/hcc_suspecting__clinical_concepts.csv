@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.hcc_suspecting._value_set_clinical_concepts (concept_name varchar(256),concept_oid varchar(256),code varchar(256),code_system varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

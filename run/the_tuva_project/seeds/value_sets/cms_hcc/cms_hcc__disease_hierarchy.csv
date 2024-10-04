@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.cms_hcc._value_set_disease_hierarchy (model_version varchar(256),hcc_code varchar(256),description varchar(256),hccs_to_exclude varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.icd_10_cm (icd_10_cm varchar(256),header_flag varchar(256),short_description varchar(256),long_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.admit_source (admit_source_code varchar(256),admit_source_description varchar(256),newborn_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

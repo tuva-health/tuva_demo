@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.cms_hcc._value_set_payment_hcc_count_factors (model_version varchar(256),factor_type varchar(256),enrollment_status varchar(256),medicaid_status varchar(256),dual_status varchar(256),orec varchar(256),institutional_status varchar(256),payment_hcc_count varchar(256),description varchar(256),coefficient float)
+  ;
+    -- dbt seed --
+    
+
+;
+  

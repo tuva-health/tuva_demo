@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.ccsr._value_set_dxccsr_v2023_1_body_systems (body_system varchar(256),ccsr_parent_category varchar(256),parent_category_description varchar(3000))
+  ;
+    -- dbt seed --
+    
+
+;
+  

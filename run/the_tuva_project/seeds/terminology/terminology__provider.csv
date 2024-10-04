@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.provider (npi varchar(35),entity_type_code varchar(26),entity_type_description varchar(37),primary_taxonomy_code varchar(35),primary_specialty_description varchar(173),provider_first_name varchar(95),provider_last_name varchar(95),provider_organization_name varchar(95),parent_organization_name varchar(95),practice_address_line_1 varchar(80),practice_address_line_2 varchar(80),practice_city varchar(65),practice_state varchar(65),practice_zip_code varchar(42),last_updated date,deactivation_date date,deactivation_flag varchar(80))
+  ;
+    -- dbt seed --
+    
+
+;
+  

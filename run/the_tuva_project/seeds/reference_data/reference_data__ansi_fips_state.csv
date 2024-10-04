@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.reference_data.ansi_fips_state (ansi_fips_state_code varchar(256),ansi_fips_state_abbreviation varchar(256),ansi_fips_state_name varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

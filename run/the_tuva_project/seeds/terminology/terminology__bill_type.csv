@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.bill_type (bill_type_code varchar(256),bill_type_description varchar(256),deprecated integer,deprecated_date date)
+  ;
+    -- dbt seed --
+    
+
+;
+  

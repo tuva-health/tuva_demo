@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.snomed_icd_10_map (id varchar(256),effective_time varchar(256),active varchar(256),module_id varchar(256),ref_set_id varchar(256),referenced_component_id varchar(256),referenced_component_name varchar(256),map_group varchar(256),map_priority varchar(256),map_rule varchar(500),map_advice varchar(500),map_target varchar(256),map_target_name varchar(256),correlation_id varchar(256),map_category_id varchar(256),map_category_name varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

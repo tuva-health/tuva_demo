@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.terminology.hcpcs_level_2 (hcpcs varchar(256),seqnum varchar(256),recid varchar(256),long_description varchar(2000),short_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

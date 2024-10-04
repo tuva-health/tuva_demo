@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.ccsr._value_set_dxccsr_v2023_1_cleaned_map (icd_10_cm_code varchar(256),icd_10_cm_code_description varchar(256),default_ccsr_category_ip varchar(256),default_ccsr_category_description_ip varchar(256),default_ccsr_category_op varchar(256),default_ccsr_category_description_op varchar(256),ccsr_category_1 varchar(256),ccsr_category_1_description varchar(256),ccsr_category_2 varchar(256),ccsr_category_2_description varchar(256),ccsr_category_3 varchar(256),ccsr_category_3_description varchar(256),ccsr_category_4 varchar(256),ccsr_category_4_description varchar(256),ccsr_category_5 varchar(256),ccsr_category_5_description varchar(256),ccsr_category_6 varchar(256),ccsr_category_6_description varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  

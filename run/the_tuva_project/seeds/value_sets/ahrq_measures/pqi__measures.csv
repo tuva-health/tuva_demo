@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table tuva_synthetic.ahrq_measures._value_set_pqi_measures (pqi_number varchar(256),pqi_name varchar(256),pqi_description varchar(1000))
+  ;
+    -- dbt seed --
+    
+            insert into tuva_synthetic.ahrq_measures._value_set_pqi_measures (pqi_number, pqi_name, pqi_description) values
+            (%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s),(%s,%s,%s)
+        
+
+;
+  

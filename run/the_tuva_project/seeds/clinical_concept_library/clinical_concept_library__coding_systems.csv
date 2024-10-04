@@ -1,0 +1,11 @@
+
+    
+    
+    
+    create table tuva_synthetic.clinical_concept_library.coding_systems (coding_system_id varchar(256),coding_system_name varchar(256),coding_system_uri varchar(256),coding_system_oid varchar(256))
+  ;
+    -- dbt seed --
+    
+
+;
+  
