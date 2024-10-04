@@ -37,6 +37,19 @@ jobs:
         with:
           dbt_command: 'dbt build --full-refresh --profiles-dir ./integration_tests/profiles/snowflake_dev'
 
+
+      - name: dbt-docs-generate
+        uses: mwhitaker/dbt-action@v1.6.3
+        with:
+          dbt_command: 'dbt docs-generate --profiles-dir ./integration_tests/profiles/snowflake_dev'
+
+      - name: Deploy to GitHub Pages (staging)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./target
+          publish_branch: gh-pages-staging
+
       - name: Get the result
         if: ${{ always() }}
         run: echo "${{ steps.dbt-build.outputs.result }}"
