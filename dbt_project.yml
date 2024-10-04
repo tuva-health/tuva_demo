@@ -6,7 +6,7 @@ profile: default
 
 vars:
 
-  claims_enabled: true
+#  claims_enabled: true
   clinical_enabled: true
 
   ## CMS HCC data mart vars
