@@ -41,7 +41,7 @@ jobs:
       - name: dbt-docs-generate
         uses: mwhitaker/dbt-action@v1.6.3
         with:
-          dbt_command: 'dbt docs-generate --profiles-dir ./integration_tests/profiles/snowflake_dev'
+          dbt_command: 'dbt docs generate --profiles-dir ./integration_tests/profiles/snowflake_dev'
 
       - name: Deploy to GitHub Pages (staging)
         uses: peaceiris/actions-gh-pages@v4
