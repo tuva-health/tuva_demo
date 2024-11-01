@@ -1,5 +1,5 @@
 name: 'the_tuva_project_demo'
-version: '0.1.7'
+version: '0.1.8'
 config-version: 2
 
 profile: default
@@ -8,6 +8,7 @@ vars:
 
   claims_enabled: true
   clinical_enabled: true
+  provider_attribution_enabled: true
 
   ## CMS HCC data mart vars
   # Setting the payment year to year needed for the demo data
@@ -31,12 +32,14 @@ clean-targets:
 seeds:
   the_tuva_project_demo:
     eligibility:
-      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.10.0','eligibility.csv',headers=true) }}"
+      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.12.0','eligibility.csv',headers=true) }}"
     lab_result:
-      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.10.0','lab_result.csv',headers=true) }}"
+      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.12.0','lab_result.csv',headers=true) }}"
     medical_claim:
-      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.10.0','medical_claim.csv',headers=true) }}"
+      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.12.0','medical_claim.csv',headers=true) }}"
     observation:
-      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.10.0','observation.csv',headers=true) }}"
+      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.12.0','observation.csv',headers=true) }}"
     pharmacy_claim:
-      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.10.0','pharmacy_claim.csv',headers=true) }}"
+      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.12.0','pharmacy_claim.csv',headers=true) }}"
+    provider_attribution:
+      +post-hook: "{{ the_tuva_project.load_seed('tuva-public-resources/versioned_tuva_synthetic_data/0.12.0','provider_attribution.csv',headers=true) }}"
