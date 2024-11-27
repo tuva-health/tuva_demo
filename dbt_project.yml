@@ -1,6 +1,7 @@
 name: 'the_tuva_project_demo'
 version: '0.1.8'
 config-version: 2
+require-dbt-version: ">=1.8.6"
 
 profile: default
 
