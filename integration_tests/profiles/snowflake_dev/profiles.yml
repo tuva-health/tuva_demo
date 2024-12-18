@@ -6,7 +6,7 @@
         password: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_PASSWORD') }}"
         role: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_ROLE') }}"
         schema: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_SCHEMA') }}"
-        threads: 5
+        threads: 4
         type: snowflake
         user: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_USER') }}"
         warehouse: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_WAREHOUSE') }}"
@@ -16,7 +16,7 @@
         password: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_PASSWORD') }}"
         role: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_ROLE') }}"
         schema: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_SCHEMA') }}"
-        threads: 5
+        threads: 4
         type: snowflake
         user: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_USER') }}"
         warehouse: "{{ env_var('DBT_SNOWFLAKE_DEV_CI_WAREHOUSE') }}"
