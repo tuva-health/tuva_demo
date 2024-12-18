@@ -9,7 +9,7 @@ Package in a dbt project with synthetic data for 1k patients loaded as dbt seeds
 
 To set up the Tuva Project with your own claims data or to better understand what the Tuva Project does, please review the ReadMe in [The Tuva Project](https://github.com/tuva-health/the_tuva_project) package for a detailed walkthrough and setup.
 
-For information on data models and to view the entire DAG check out our dbt [Docs](https://tuva-health.github.io/the_tuva_project_demo/).
+For information on the data models check out our [Docs](https://thetuvaproject.com/).
 
 ## 🔌 Database Support
 
@@ -20,7 +20,7 @@ For information on data models and to view the entire DAG check out our dbt [Doc
 ## ✅ How to get started
 
 ### Pre-requisites
-1. You have [dbt](https://www.getdbt.com/) installed and configured (i.e. connected to your data warehouse). If you have not installed dbt, [here](https://docs.getdbt.com/dbt-cli/installation) are instructions for doing so.
+1. You have [dbt](https://www.getdbt.com/) installed and configured (i.e. connected to your data warehouse). If you have not installed dbt, [here](https://docs.getdbt.com/docs/get-started-dbt) are instructions for doing so.
 2. You have created a database for the output of this project to be written in your data warehouse.
 
 ### Getting Started
